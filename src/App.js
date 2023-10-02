@@ -1,5 +1,7 @@
 import './App.sass';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
+import Indication from './components/Indication/Indication'
+
 
 function App() {
   return (
@@ -7,6 +9,10 @@ function App() {
 
       <header className="App-header">
         <ZoneQuestion />
+        <Indication
+          isAnimate={true}
+          content={"Appuyer pour commencer !"}
+        />
       </header>
 
 

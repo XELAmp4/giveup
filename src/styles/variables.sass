@@ -1,14 +1,27 @@
 //COULEURS  
 
+$white : #fff
+$dark : #000
+
 $darkBlue : #090043
 $yellow : #F2BF1C
 $purple : #CD12B7
 
-
-//mixin
+//MIXINS
 
 @mixin absoluteCenter
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%,-50%)   
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)   
+
+@mixin flexCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+//FONT
+@font-face 
+    font-family: Acme
+    src: url(../assets/fonts/Acme-Regular.woff)
