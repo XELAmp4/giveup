@@ -1,4 +1,5 @@
 import './App.sass';
+import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 
 function App() {
   return (
@@ -51,6 +52,9 @@ function App() {
       </svg>
 
       </div>
+      <header className="App-header">
+      <ZoneQuestion />
+      </header>
     </div>
   );
 }
