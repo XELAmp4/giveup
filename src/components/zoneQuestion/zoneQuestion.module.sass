@@ -1,3 +1,5 @@
+@import ../../styles/variables
+  
 $zone_w : 70vw
 $zone_h : 70vh
   
@@ -8,19 +10,16 @@ $zone_h : 70vh
   width: $zone_w
   height: $zone_h
   padding: 5px
-  background: linear-gradient(to right, #F2BF1C, #CD12B7)
+  background: linear-gradient(to right, $yellow, $purple)
   border-top-left-radius: 100px
   border-bottom-right-radius: 100px
-  position: absolute
   z-index: 100
-  top: 50%
-  left: 50%
-  transform: translate(-50%,-50%)
+  @include absoluteCenter
 
 .zoneQuestion 
   height: $zone_h*0.94
+  background-color: $darkBlue
   width: $zone_w*0.96
-  background-color: #090043
   border-top-left-radius: 100px
   border-bottom-right-radius: 100px
   
