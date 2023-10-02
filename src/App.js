@@ -4,6 +4,13 @@ import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 function App() {
   return (
     <div className="App">
+
+      <header className="App-header">
+        <ZoneQuestion />
+      </header>
+
+
+
       <div className='bkg'>
         <svg  viewBox="0 0 3840 2160" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_31_111)">
@@ -52,9 +59,7 @@ function App() {
       </svg>
 
       </div>
-      <header className="App-header">
-      <ZoneQuestion />
-      </header>
+      
     </div>
   );
 }

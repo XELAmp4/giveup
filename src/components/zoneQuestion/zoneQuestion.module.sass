@@ -1,17 +1,27 @@
+$zone_w : 70vw
+$zone_h : 70vh
+  
 .gradient
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 50vw
-    height: 50vh
-    padding: 5px
-    background: linear-gradient(to right, #F2BF1C, #CD12B7)
-    border-top-left-radius: 100px
-    border-bottom-right-radius: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $zone_w
+  height: $zone_h
+  padding: 5px
+  background: linear-gradient(to right, #F2BF1C, #CD12B7)
+  border-top-left-radius: 100px
+  border-bottom-right-radius: 100px
+  position: absolute
+  z-index: 100
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
 
 .zoneQuestion 
-  height: 47vh
-  width: 48vw
+  height: $zone_h*0.94
+  width: $zone_w*0.92
   background-color: #090043
   border-top-left-radius: 100px
   border-bottom-right-radius: 100px
+  
+  
