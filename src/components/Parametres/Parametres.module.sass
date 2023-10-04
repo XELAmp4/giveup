@@ -1,0 +1,67 @@
+@import ../../styles/variables
+
+.parametres
+    color: $white
+    font-family: 'Acme'
+    width: 90%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    h2
+        font-size: 4.5vw
+        text-align: center
+        margin: 0
+
+    .jouer
+        border: none
+        margin: auto
+        height: 3vw
+        width: 6vw
+        border-top-left-radius: 20%
+        border-bottom-right-radius: 20%
+        color: $white
+        background: linear-gradient(to right, $yellow, $purple)
+        font-family: 'Acme'
+        font-size: 1.5vw
+
+    .container
+        display: flex
+        justify-content: space-between
+
+        .tours,.upers
+            width: 50%
+            p
+                text-align: center
+                font-size: 2vw
+                
+            div
+                display: flex
+                justify-content: space-around
+                margin: 4vw
+                button
+                    width: 4vw
+                    height: 4vw
+                    border-radius: 20%
+                    border: none
+                    background-color: #d9d9d9a2
+                    color: $white
+                    font-size: 2vw
+                    font-weight: bolder
+                    font-family: 'Acmes'
+
+                .bouton_actif_Upers, .bouton_actif_Tours
+                    background-color: $purple
+
+        div.tours
+            position: relative
+            &::before
+                content: ""
+                width: 3px
+                height: 80%
+                background-color: #fff
+                display: block
+                position: absolute
+                left: 0
+                top: 10%
+                transform: translateX(-50%)
