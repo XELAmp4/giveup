@@ -1,11 +1,12 @@
 @import ../../styles/variables
-  
-$zone_w : 70vw
-$zone_h : 70vh
-  
+
+
 .gradient
-  width: $zone_w
-  height: $zone_h
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $zoneG_w
+  height: $zoneG_h
   padding: 5px
   background: linear-gradient(to right, $yellow, $purple)
   border-top-left-radius: 100px
@@ -15,9 +16,9 @@ $zone_h : 70vh
   @include flexCenter
 
 .zoneQuestion 
-  height: $zone_h*0.94
+  height: $zoneQ_h
   background-color: $darkBlue
-  width: $zone_w*0.96
+  width: $zoneQ_w
   border-top-left-radius: 100px
   border-bottom-right-radius: 100px
   @include flexCenter
