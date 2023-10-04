@@ -1,15 +1,51 @@
 import './App.sass';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
+import Indication from './components/Indication/Indication'
+import React, { useState } from 'react';
+
+
+
 
 function App() {
+
+  const [PageActive, setPageActive] = useState('home');
+
+
+  const changePage = ()=>{
+    if (PageActive == 'home') {
+      setPageActive('parametres');
+    }
+  }
+
+  let content;
+
+  switch (PageActive) {
+    case 'home':
+      content = (
+          <Indication
+            isAnimate={true}
+            content={"Appuyer pour commencer !"}
+          />
+      )
+      break;
+  
+    case 'parametres':
+      content = ''
+      break
+    default:
+      break;
+  }
+
+  
+
   return (
-    <div className="App">
-
+    <div className="App" onClick={changePage}>
       <header className="App-header">
-        <ZoneQuestion />
+          <ZoneQuestion 
+            PageActive={PageActive}
+          />
+          {content}
       </header>
-
-
 
       <div className='bkg'>
         <svg  viewBox="0 0 3840 2160" fill="none" xmlns="http://www.w3.org/2000/svg">

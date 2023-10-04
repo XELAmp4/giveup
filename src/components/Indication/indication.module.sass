@@ -1,0 +1,14 @@
+@import ../../styles/variables
+@import ../../styles/animations
+
+
+.indication
+    color: $white
+    @include absoluteCenter
+    top: 87vh
+    font-family: 'Acme'
+    font-size: 2.5vw
+
+    &.animate
+        animation: clignotement alternate infinite 1.5s
+        

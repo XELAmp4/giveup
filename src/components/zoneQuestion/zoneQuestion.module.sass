@@ -4,9 +4,6 @@ $zone_w : 70vw
 $zone_h : 70vh
   
 .gradient
-  display: flex
-  justify-content: center
-  align-items: center
   width: $zone_w
   height: $zone_h
   padding: 5px
@@ -15,6 +12,7 @@ $zone_h : 70vh
   border-bottom-right-radius: 100px
   z-index: 100
   @include absoluteCenter
+  @include flexCenter
 
 .zoneQuestion 
   height: $zone_h*0.94
@@ -22,5 +20,7 @@ $zone_h : 70vh
   width: $zone_w*0.96
   border-top-left-radius: 100px
   border-bottom-right-radius: 100px
+  @include flexCenter
+
   
   
