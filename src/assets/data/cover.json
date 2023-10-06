@@ -1,0 +1,129 @@
+[
+    {
+        "img": "kik_cover.jpeg",
+        "Titre": "Adieu",
+        "Artiste": "Kik",
+        "Sortie": "07/09/2023"
+    },
+    {
+        "img": "luther_cover.jpeg",
+        "Titre": "Garcon",
+        "Artiste": "Luther",
+        "Sortie": "03/06/2022"
+    },
+    {
+        "img": "Mylene-Farmer_cover.jpeg",
+        "Titre": "L'emprise",
+        "Artiste": "Mylene Farmer",
+        "Sortie": "25/11/2022"
+    },
+    {
+        "img": "laylow_cover.jpeg",
+        "Titre": "Trinity",
+        "Artiste": "Laylow",
+        "Sortie": "28/02/2020"
+    },
+    {
+        "img": "Drake_cover.jpeg",
+        "Titre": "For all the dogs",
+        "Artiste": "Drake",
+        "Sortie": "06/11/2023"
+    },
+    {
+        "img": "zed_cover.jpeg",
+        "Titre": "French cash",
+        "Artiste": "Zed Yun Pavarotti",
+        "Sortie": "17/05/2019"
+    },
+    {
+        "img": "Travis-Scott_cover.png",
+        "Titre": "Utopia",
+        "Artiste": "Travis Scott",
+        "Sortie": "26/07/2023"
+    },
+    {
+        "img": "Skillet_cover.jpeg",
+        "Titre": "Unleashed",
+        "Artiste": "Skillet",
+        "Sortie": "08/07/2016"
+    },
+    {
+        "img": "Obispo_cover.jpeg",
+        "Titre": "L'important c'est d'aimer",
+        "Artiste": "Pascal Obispo",
+        "Sortie": "22/02/2000"
+    },
+    {
+        "img": "New-jeans_cover.png",
+        "Titre": "NewJeans 2nd EP 'Get Up'",
+        "Artiste": "NewJeans",
+        "Sortie": "21/07/2023"
+    },
+    {
+        "img": "Moji_cover.jpeg",
+        "Titre": "Temp d'aime",
+        "Artiste": "Moji x Sboy",
+        "Sortie": "11/06/2021"
+    },
+    {
+        "img": "Magic-System_cover.jpeg",
+        "Titre": "Toutè Kalé",
+        "Artiste": "Magic System",
+        "Sortie": "01/04/2011"
+    },
+    {
+        "img": "Lady-gaga_cover.jpeg",
+        "Titre": "The fame monster",
+        "Artiste": "Lady gaga",
+        "Sortie": "19/08/2008"
+    },
+    {
+        "img": "koba_cover.jpeg",
+        "Titre": "Détail",
+        "Artiste": "koba la D",
+        "Sortie": "23/10/2020"
+    },
+    {
+        "img": "Karism_cover.jpg",
+        "Titre": "Goulag",
+        "Artiste": "Kaarism",
+        "Sortie": "19/06/2021"
+    },
+    {
+        "img": "Jul_cover.jpeg",
+        "Titre": "Extraterrestre",
+        "Artiste": "Jul",
+        "Sortie": "03/06/2022"
+    },
+    {
+        "img": "joji_cover.jpeg",
+        "Titre": "Nectar",
+        "Artiste": "Joji",
+        "Sortie": "24/09/2020"
+    },
+    {
+        "img": "indila_cover.jpg",
+        "Titre": "Mini World",
+        "Artiste": "indila",
+        "Sortie": "01/01/2014"
+    },
+    {
+        "img": "Freeze-Corleone_cover.jpg",
+        "Titre": "ADC",
+        "Artiste": "Freeze Corleone",
+        "Sortie": "11/09/2023"
+    },
+    {
+        "img": "Fatal-bazooka_cover.jpeg",
+        "Titre": "T'as vu",
+        "Artiste": "Fatal Bazooka",
+        "Sortie": "28/05/2007"
+    },
+    {
+        "img": "coilguns_cover.jpeg",
+        "Titre": "Watchwinders",
+        "Artiste": "NewJeans",
+        "Sortie": "25/10/2019"
+    }
+    
+]

@@ -2,24 +2,26 @@ import './App.sass';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 import Indication from './components/Indication/Indication'
 import React, { useState } from 'react';
+import { useParty } from './providers/party-provider';
+
 
 
 
 
 function App() {
 
-  const [PageActive, setPageActive] = useState('home');
+  const { party, setParty } = useParty();
 
 
   const changePage = ()=>{
-    if (PageActive == 'home') {
-      setPageActive('parametres');
+    if (party.pageActive == 'home') {
+      setParty({...party,pageActive: 'parametres'})
     }
   }
 
   let content;
 
-  switch (PageActive) {
+  switch (party.pageActive) {
     case 'home':
       content = (
           <Indication
@@ -32,6 +34,15 @@ function App() {
     case 'parametres':
       content = ''
       break
+
+    case 'timeline':
+      content = (
+        <Indication
+            isAnimate={false}
+            content={"Ordre de sortie croissant"}
+          />
+      )
+      break
     default:
       break;
   }
@@ -41,9 +52,7 @@ function App() {
   return (
     <div className="App" onClick={changePage}>
       <header className="App-header">
-          <ZoneQuestion 
-            PageActive={PageActive}
-          />
+          <ZoneQuestion/>
           {content}
       </header>
 
