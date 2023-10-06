@@ -7,10 +7,10 @@ export default function Parametres({}) {
 
     const { party, setParty } = useParty()
 
-    useEffect(() => {
-        setParty({...party,playerNumber: 1})
+    // useEffect(() => {
+    //     setParty({...party,playerNumber: 1})
         
-    }, [])
+    // }, [])
 
     const [boutonActifUpers, setboutonActifUpers] = useState(null);
 
@@ -27,7 +27,7 @@ export default function Parametres({}) {
     };
 
     const submit = () => {
-        console.log(party);
+        setParty({...party,pageActive: 'timeline'})
     };
 
 
