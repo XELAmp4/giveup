@@ -12,14 +12,14 @@ export default function Parametres({}) {
         
     // }, [])
 
-    const [boutonActifUpers, setboutonActifUpers] = useState(null);
+    const [boutonActifUpers, setboutonActifUpers] = useState(2);
 
     const handleBoutonClickUpers = (bouton) => {
         setboutonActifUpers(bouton);
         setParty({...party,playerNumber: bouton})
     };
 
-    const [boutonActifTours, setboutonActifTours] = useState(null);
+    const [boutonActifTours, setboutonActifTours] = useState(8);
 
     const handleBoutonClickTours = (bouton) => {
         setboutonActifTours(bouton);
