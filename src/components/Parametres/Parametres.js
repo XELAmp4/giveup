@@ -19,7 +19,7 @@ export default function Parametres({}) {
         setParty({...party,playerNumber: bouton})
     };
 
-    const [boutonActifTours, setboutonActifTours] = useState(8);
+    const [boutonActifTours, setboutonActifTours] = useState(2);
 
     const handleBoutonClickTours = (bouton) => {
         setboutonActifTours(bouton);
@@ -27,8 +27,26 @@ export default function Parametres({}) {
     };
 
     const submit = () => {
-        setParty({...party,pageActive: 'timeline'})
+        const games = ['Timeline','Puzzle','Simon','Relier'];
+        let array =[];
+            for (let index = 0; index < boutonActifTours; index++) {
+                array.push([]);
+                for (let index2 = 0; index2 < boutonActifUpers; index2++) {
+                    array[index].push(games[Math.floor(Math.random() * games.length)]);
+                }
+                array[index].push('Question étoile');
+            }
+            // let array = [['a','b','c'],['a','b','c'],['a','b','c']]
+            setParty((prev) => {
+                const newDatas = {...prev};
+                newDatas.deroulement = array;
+                return {...newDatas}
+            })
     };
+
+    useEffect(() => {
+        console.log(party)
+    }, [party])
 
 
     return (
@@ -57,18 +75,18 @@ export default function Parametres({}) {
                     <p>Nombres de tours:</p>
                     <div>
                     <button
-                            className={boutonActifTours === 8 ? styles.bouton_actif_Tours : ''}
-                            onClick={() => handleBoutonClickTours(8)}
-                        >8</button>
+                            className={boutonActifTours === 2 ? styles.bouton_actif_Tours : ''}
+                            onClick={() => handleBoutonClickTours(2)}
+                        >2</button>
 
                         <button
-                            className={boutonActifTours === 16 ? styles.bouton_actif_Tours : ''}
-                            onClick={() => handleBoutonClickTours(16)}
-                        >16</button>
+                            className={boutonActifTours === 4 ? styles.bouton_actif_Tours : ''}
+                            onClick={() => handleBoutonClickTours(4)}
+                        >4</button>
                         <button
-                            className={boutonActifTours === 24 ? styles.bouton_actif_Tours : ''}
-                            onClick={() => handleBoutonClickTours(24)}
-                        >24</button>
+                            className={boutonActifTours === 6 ? styles.bouton_actif_Tours : ''}
+                            onClick={() => handleBoutonClickTours(6)}
+                        >6</button>
                     </div>
                 </div>
             </div>
