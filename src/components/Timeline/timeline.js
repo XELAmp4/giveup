@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 // eslint-disable-next-line no-empty-pattern
 export default function Timeline({}) {
+
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(){
         var rand1 = Math.floor(Math.random()*21);    

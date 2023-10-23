@@ -5,7 +5,15 @@ import React, { useState } from 'react';
 import { useParty } from './providers/party-provider';
 
 
-
+// Projet BUT MMI - Semestre 5 - Dispositifs intéractifs
+// ▄▄▄▄▄▄▄ ▄▄▄ ▄▄   ▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ 
+// █       █   █  █ █  █  █ █  █       █
+// █   ▄▄▄▄█   █  █▄█  █  █ █  █    ▄  █
+// █  █  ▄▄█   █       █  █▄█  █   █▄█ █
+// █  █ █  █   █       █       █    ▄▄▄█
+// █  █▄▄█ █   ██     ██       █   █    
+// █▄▄▄▄▄▄▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄▄█    
+// BELLET Alexandre - COLLET Clément - BRAVARD Lorenzo
 
 
 function App() {
