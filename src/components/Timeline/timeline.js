@@ -18,12 +18,6 @@ export default function Timeline({}) {
             rand3 = Math.floor(Math.random()*21); 
         } 
         return [rand1, rand2, rand3]
-    }
-    var rand3 = Math.floor(Math.random()*nb);
-    while(rand2 === rand3 || rand1 === rand3){
-        rand3 = Math.floor(Math.random()*nb); 
-    } 
-    return [rand1, rand2, rand3]
   }
   const source = random(21);
   console.log(source, 'img')
@@ -59,8 +53,8 @@ export default function Timeline({}) {
         break;
     default:
       break;
-  }
-  return(
+    }
+return (
     <div>
         {content}
     </div>
