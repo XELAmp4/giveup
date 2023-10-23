@@ -22,12 +22,11 @@ export default function ZoneQuestion({}) {
         <Parametres/>
       )
       break;
-
     case 'timeline':
-      content = (
-        <Timeline/>
-      )
-      break;
+        content = (
+          <Timeline/>
+        )
+        break;
     default:
       break;
   }

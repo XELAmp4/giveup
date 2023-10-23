@@ -1,7 +1,6 @@
 import './App.sass';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 import Indication from './components/Indication/Indication'
-import React, { useState } from 'react';
 import { useParty } from './providers/party-provider';
 
 
@@ -22,7 +21,7 @@ function App() {
 
 
   const changePage = ()=>{
-    if (party.pageActive == 'home') {
+    if (party.pageActive === 'home') {
       setParty({...party,pageActive: 'parametres'})
     }
   }

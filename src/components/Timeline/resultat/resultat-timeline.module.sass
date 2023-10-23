@@ -1,10 +1,44 @@
+@import ../../../styles/variables
+
+    
 .resultat
     display: flex
     justify-content: center
     flex-direction: column
     align-items: center
 
+    p
+        color: white
 
 h1
     color: white
     font-size: 50px
+    position: absolute
+    top: 0
+
+.cover1
+    @include absoluteCenter
+    left: 20%
+
+.cover2
+    @include absoluteCenter
+
+.cover3
+    @include absoluteCenter
+    left: 80%
+
+.date1
+    @include absoluteCenter
+    left: 20%
+    top: 70%
+
+
+.date2
+    @include absoluteCenter
+    top: 70%
+
+
+.date3
+    @include absoluteCenter
+    left: 80%
+    top: 70%
