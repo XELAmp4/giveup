@@ -27,7 +27,8 @@ export default function Parametres({}) {
     };
 
     const submit = () => {
-        const games = ['Timeline','Puzzle','Simon','Relier'];
+        const games = ['timeline','puzzle','simon','relier'];
+
         let array =[];
             for (let index = 0; index < boutonActifTours; index++) {
                 array.push([]);
@@ -40,13 +41,11 @@ export default function Parametres({}) {
             setParty((prev) => {
                 const newDatas = {...prev};
                 newDatas.deroulement = array;
+                // newDatas.pageActive = array[0][0]; ligne finale qund tous les jeux seront prets :)
+                newDatas.pageActive = 'timeline';
                 return {...newDatas}
             })
     };
-
-    useEffect(() => {
-        console.log(party)
-    }, [party])
 
 
     return (
