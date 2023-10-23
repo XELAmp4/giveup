@@ -15,8 +15,8 @@ export default function Puzzle() {
   const [elements, setElements] = useState([]);
   
   useEffect(() => {
-    const imgWidth = 150;
-    const imgHeight = 150;
+    const imgWidth = 600;
+    const imgHeight = 600;
     const newElements = [];
     let emp = 0;
 
