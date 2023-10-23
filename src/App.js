@@ -1,4 +1,5 @@
 import './App.sass';
+import Puzzle from './components/puzzle/puzzle';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 import Indication from './components/Indication/Indication'
 import { useParty } from './providers/party-provider';
@@ -13,6 +14,7 @@ import { useParty } from './providers/party-provider';
 // █  █▄▄█ █   ██     ██       █   █    
 // █▄▄▄▄▄▄▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄▄█    
 // BELLET Alexandre - COLLET Clément - BRAVARD Lorenzo
+
 
 
 function App() {
