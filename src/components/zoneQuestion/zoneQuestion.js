@@ -10,7 +10,7 @@ import { useParty } from '../../providers/party-provider'
 export default function ZoneQuestion({}) {
   const { party, setParty } = useParty();
   let content;
-  console.log(party.pageActive);
+  // console.log(party.pageActive);
   switch (party.pageActive) {
     case 'home':
       content = (

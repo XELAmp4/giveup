@@ -6,11 +6,18 @@ import cover from '../../assets/data/cover.json'
 
 
 export default function Timeline({}) {
-  function random(nb){
-    var rand1 = Math.floor(Math.random()*nb);    
-    var rand2 = Math.floor(Math.random()*nb);    
-    while(rand1 === rand2){
-        rand2 = Math.floor(Math.random()*nb); 
+    //fonction permettant de choisir trois images totalement aléatoirement
+    function random(){
+        var rand1 = Math.floor(Math.random()*21);    
+        var rand2 = Math.floor(Math.random()*21);    
+        while(rand1 === rand2){
+            rand2 = Math.floor(Math.random()*21); 
+        }
+        var rand3 = Math.floor(Math.random()*21);
+        while(rand2 === rand3 || rand1 === rand3){
+            rand3 = Math.floor(Math.random()*21); 
+        } 
+        return [rand1, rand2, rand3]
     }
     var rand3 = Math.floor(Math.random()*nb);
     while(rand2 === rand3 || rand1 === rand3){

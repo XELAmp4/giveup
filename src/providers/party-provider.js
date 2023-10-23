@@ -12,10 +12,12 @@ export const useParty = () => {
 export const PartyProvider = ({
     children
 }) => {
+    
     const [party, setParty] = useState({
         playerNumber: 0,
         lap: 0,
-        pageActive: 'home'
+        pageActive: 'home',
+        deroulement: []
     });
 
     return (

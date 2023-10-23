@@ -4,7 +4,15 @@ import Indication from './components/Indication/Indication'
 import { useParty } from './providers/party-provider';
 
 
-
+// Projet BUT MMI - Semestre 5 - Dispositifs intéractifs
+// ▄▄▄▄▄▄▄ ▄▄▄ ▄▄   ▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ 
+// █       █   █  █ █  █  █ █  █       █
+// █   ▄▄▄▄█   █  █▄█  █  █ █  █    ▄  █
+// █  █  ▄▄█   █       █  █▄█  █   █▄█ █
+// █  █ █  █   █       █       █    ▄▄▄█
+// █  █▄▄█ █   ██     ██       █   █    
+// █▄▄▄▄▄▄▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄▄█    
+// BELLET Alexandre - COLLET Clément - BRAVARD Lorenzo
 
 
 function App() {
