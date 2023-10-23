@@ -17,7 +17,34 @@
   color: #fff
 
 ul
-    list-style: none
-    display: grid
-    grid-template-columns: repeat(3, 0.11fr)
-    grid-gap: 5px
+  list-style: none
+  display: grid
+  grid-template-columns: repeat(3, 0.11fr)
+  grid-gap: 5px
+
+#plateau
+  display: grid !important
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: repeat(5, 1fr)
+  grid-column-gap: 0px
+  grid-row-gap: 0px
+
+
+.emp_1 
+  grid-area: 1 / 1 / 2 / 2
+.emp_2 
+  grid-area: 1 / 2 / 2 / 3
+.emp_3 
+  grid-area: 1 / 3 / 2 / 4
+.emp_4 
+  grid-area: 2 / 1 / 3 / 2
+.emp_5 
+  grid-area: 2 / 2 / 3 / 3
+.emp_6 
+  grid-area: 2 / 3 / 3 / 4
+.emp_7 
+  grid-area: 3 / 1 / 4 / 2
+.emp_8 
+  grid-area: 3 / 2 / 4 / 3
+.emp_9 
+  grid-area: 3 / 3 / 4 / 4
