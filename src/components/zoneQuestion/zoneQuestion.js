@@ -1,6 +1,7 @@
 import styles from './zoneQuestion.module.sass'
 import Titre from '../Titre/Titre'
 import Timeline from '../Timeline/timeline'
+import Relier from '../relier/relier'
 import Parametres from '../Parametres/Parametres'
 import { useParty } from '../../providers/party-provider'
 
@@ -27,6 +28,12 @@ export default function ZoneQuestion({}) {
           <Timeline/>
         )
         break;
+
+    case 'relier':
+      content = (
+        <Relier/>
+      )
+      break;
     default:
       break;
   }

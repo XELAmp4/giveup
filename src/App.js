@@ -50,6 +50,15 @@ function App() {
           />
       )
       break
+
+    case 'relier':
+      content = (
+        <Indication
+            isAnimate={false}
+            content={"Relier les artiste à leurs albums"}
+          />
+      )
+      break
     default:
       break;
   }
