@@ -45,7 +45,7 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
         </div>
       ) : (
         <div className={styles.resultatPuzzle}>
-            <h1 className={styles.titreResultat}>Vraiment mauvais... C'est une mauvaise réponse L</h1>
+            <h1 className={styles.titreResultat}>Vraiment mauvais... C'est une mauvaise réponse...</h1>
             <img className={styles.imageResultat} src={'./cover/' + coverImage} alt="" />+
             <div className={styles.infoResultat}>
                 <p>{coverTitle} </p>

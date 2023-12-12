@@ -24,6 +24,8 @@ export default function Parametres({}) {
     const handleBoutonClickTours = (bouton) => {
         setboutonActifTours(bouton);
         setParty({...party,lap: bouton})
+        console.log(party, 'party');
+        
     };
 
     const submit = () => {
@@ -45,10 +47,13 @@ export default function Parametres({}) {
                 const newDatas = {...prev};
                 newDatas.deroulement = array;
 
-                // newDatas.pageActive = array[0][0]; ligne finale qund tous les jeux seront prets :
-                newDatas.pageActive = 'puzzle';
+                console.log(newDatas.deroulement,'deroulement');
+                
+                // newDatas.pageActive = array[0][0]; ligne finale qund tous les jeux seront prets :)
+                newDatas.pageActive = 'puzzle';                
 
                 return {...newDatas}
+
             })
     };
 
