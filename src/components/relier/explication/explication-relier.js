@@ -8,7 +8,7 @@ export default function ExplicationRelier({setGame}) {
   <section className={styles.explication}>
     <h1>Petite explication RELIER</h1>
     <Chrono 
-      chrono={5}
+      chrono={0}
       setGame={setGame}
       redirection={'question-relier'}
     />
