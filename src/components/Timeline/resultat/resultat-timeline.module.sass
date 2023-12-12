@@ -1,4 +1,6 @@
 @import ../../../styles/variables
+@import ../../../styles/animations
+
 
     
 .resultat
@@ -44,3 +46,22 @@ h1
     @include absoluteCenter
     left: 80%
     top: 70%
+
+.block
+    display: block
+
+.none
+    display: none
+
+.check
+    @include absoluteCenter
+    top: -5vh
+    left: -4vw
+    animation: gelatine 1s forwards linear
+
+
+.cross
+    @include absoluteCenter
+    top: -5vh
+    left: -4vw
+    animation: gelatine 1s forwards linear
