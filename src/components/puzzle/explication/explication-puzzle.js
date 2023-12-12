@@ -12,12 +12,14 @@ export default function ExplicationPuzzle({setGame}) {
       <img src='./imageExplication/explicationImage.png' alt='Screen du jeu'></img>
       <img src='./cover/joji_cover.jpeg' alt='Screen du jeu'></img>
     </div>
+    <div className={styles.divChrono}>
+      <Chrono 
+        chrono={5}
+        setGame={setGame}
+        redirection={'question-puzzle'}
+      />
+    </div>
     
-    <Chrono 
-      chrono={2000000}
-      setGame={setGame}
-      redirection={'question-puzzle'}
-    />
   </section>
   )
 }
