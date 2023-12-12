@@ -4,6 +4,7 @@ import Timeline from '../Timeline/timeline'
 import Traduction from '../parole-traduite/parole-traduite'
 import Parametres from '../Parametres/Parametres'
 import { useParty } from '../../providers/party-provider'
+import RedirectionPuzzle from '../puzzle/redirectionPuzzle'
 
 
 export default function ZoneQuestion({}) {
@@ -26,11 +27,18 @@ export default function ZoneQuestion({}) {
           <Timeline/>
         )
         break;
+
     case 'traduction':
         content = (
           <Traduction/>
         )
         break;
+
+    case 'puzzle':
+    content = (
+      <RedirectionPuzzle />
+    )
+    break;
     default:
       break;
   }

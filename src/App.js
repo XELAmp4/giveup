@@ -3,6 +3,7 @@ import Puzzle from './components/puzzle/puzzle';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 import Indication from './components/Indication/Indication'
 import { useParty } from './providers/party-provider';
+import RedirectionPuzzle from './components/puzzle/redirectionPuzzle';
 
 
 // Projet BUT MMI - Semestre 5 - Dispositifs intéractifs
@@ -52,6 +53,7 @@ function App() {
           />
       )
       break
+
     case 'traduction':
       content = (
         <Indication
@@ -60,6 +62,16 @@ function App() {
           />
       )
       break
+
+
+    case 'puzzle':
+      content= (
+        <Indication
+            isAnimate={false}
+            content={"Résoudre le puzzle"}
+          />
+      )
+
     default:
       break;
   }
