@@ -3,6 +3,7 @@ import Titre from '../Titre/Titre'
 import Timeline from '../Timeline/timeline'
 import Parametres from '../Parametres/Parametres'
 import { useParty } from '../../providers/party-provider'
+import RedirectionPuzzle from '../puzzle/redirectionPuzzle'
 
 
 
@@ -27,6 +28,11 @@ export default function ZoneQuestion({}) {
           <Timeline/>
         )
         break;
+    case 'puzzle':
+    content = (
+      <RedirectionPuzzle />
+    )
+    break;
     default:
       break;
   }
