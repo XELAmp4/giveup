@@ -7,6 +7,7 @@
             flex-direction: row
             justify-content: space-around
             align-items: center
+            width: 100%
 
             @include absoluteCenter
         &_canva
@@ -14,3 +15,11 @@
             canvas
                 position: absolute
                 border: none
+
+        &_albums
+            max-width: 25%
+            display: flex
+            flex-direction: column
+            .cover
+                width: 35%
+                aspect-ratio: 1/1
