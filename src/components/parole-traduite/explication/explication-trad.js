@@ -10,7 +10,7 @@ export default function ExplicationTrad({setGame}) {
     <p className={styles.exp}>Tout le monde participe ! Utilisé les touches du clavier qui vous sont attribués pour buzzer et tenter votre chance. /!\ Attention si votre réponse est incorrect vous perderai des points. Bonne chance à vous !</p>
     <img src='Timeline/exemple-traduction.png' alt='Screen du jeu Timeline'></img>
     <Chrono 
-      chrono={5}
+      chrono={30}
       setGame={setGame}
       redirection={'question-traduction'}
       button={'Passer !'}
