@@ -6,6 +6,9 @@ import cover from '../../assets/data/cover.json'
 
 
 export default function Relier({}) {
+
+    const [save, setSave] = useState([]);
+
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(){
         var rand1 = Math.floor(Math.random()*21);    
@@ -20,13 +23,43 @@ export default function Relier({}) {
         return [rand1, rand2, rand3]
   }
   const source = random(21);
-  console.log(source, 'img')
+  // console.log(source, 'img')
 
   //contient les 3 noms des fichiers des images
   const [Sources, setSources] = useState([cover[source[0]], cover[source[1]], cover[source[2]]]);
 
   const [gameT, setGame] = useState('explication-relier');
   let content;
+
+
+  const getRandomInt = (max) =>  {return Math.floor(Math.random() * max);}
+  const createList = (datas) => {
+    let n1 = getRandomInt(3);
+    let n2 = getRandomInt(3);
+    while (n2 == n1) {
+        n2 = getRandomInt(3);  
+    }
+    let n3 = getRandomInt(3);
+    while ((n3 == n1) || (n3 == n2)) {
+        n3 = getRandomInt(3);  
+    }
+    let res=["","",""];
+    res[n1]= datas[0];
+    res[n2]= datas[1];
+    res[n3]= datas[2];
+  
+    return res;
+}
+
+const liste = createList(Sources);
+
+console.log("init ",liste);
+
+
+
+
+
+
   switch (gameT) {
     case 'explication-relier':
         content = (
@@ -41,6 +74,9 @@ export default function Relier({}) {
           setGame={setGame}
           Sources={Sources}
           setSources={setSources}
+          save = {save}
+          setSave = {setSave}
+          liste = {liste}
           />
         )
         break;
@@ -48,6 +84,7 @@ export default function Relier({}) {
         content = (
           <ResultatRelier
             Sources={Sources}
+            save = {save}
           />
         )
         break;

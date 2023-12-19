@@ -2,10 +2,9 @@ import styles from './question-relier.module.sass'
 import cover from '../../../assets/data/cover.json'
 import React, { useState, useRef, useEffect } from 'react';
 import Chrono from '../../chrono/chrono';
-import { random } from 'gsap';
 
 // eslint-disable-next-line no-empty-pattern
-export default function QuestionRelier({setGame, Sources, setSources}) {
+export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste}) {
     const canvasPOINTSRef = useRef(null);
     const canvasLINESRef = useRef(null);
     let [points, setPoints] = useState([]);
@@ -155,10 +154,13 @@ export default function QuestionRelier({setGame, Sources, setSources}) {
                 }              
             }
         });
+        setSave(relations);
         drawLines();
         drawing = false;
     }
     };
+
+    
   
     const handlePointerMove = (e) => {
     //   console.log('move ', ctx);
@@ -169,35 +171,29 @@ export default function QuestionRelier({setGame, Sources, setSources}) {
     }
     };
 
-    let reponse = [["","D1"],["","D2"],["","D3"]];
 
-    const getRandomInt = (max) =>  {return Math.floor(Math.random() * max);}
-    const createList = (datas) => {
-        let n1 = getRandomInt(3);
-        let n2 = getRandomInt(3);
-        while (n2 == n1) {
-            n2 = getRandomInt(3);  
-        }
-        let n3 = getRandomInt(3);
-        while ((n3 == n1) || (n3 == n2)) {
-            n3 = getRandomInt(3);  
-        }
-        let res=["","",""];
-        res[0]= datas[n1];
-        res[1]= datas[n2];
-        res[2]= datas[n3];
+    // const getRandomInt = (max) =>  {return Math.floor(Math.random() * max);}
+    // const createList = (datas) => {
+    //     let n1 = getRandomInt(3);
+    //     let n2 = getRandomInt(3);
+    //     while (n2 == n1) {
+    //         n2 = getRandomInt(3);  
+    //     }
+    //     let n3 = getRandomInt(3);
+    //     while ((n3 == n1) || (n3 == n2)) {
+    //         n3 = getRandomInt(3);  
+    //     }
+    //     let res=["","",""];
+    //     res[n1]= datas[0];
+    //     res[n2]= datas[1];
+    //     res[n3]= datas[2];
+      
+    //     return res;
+    // }
 
-        reponse[0][0]= datas[n1].Artiste;
-        reponse[1][0]= datas[n2].Artiste;
-        reponse[2][0]= datas[n3].Artiste;
-        return res;
-    }
+    // const liste = createList(Sources);
 
     
-    const liste = createList(Sources);
-    console.log(liste[0].Artiste,liste[1].Artiste,liste[2].Artiste);
-    console.log('rep : ', reponse);
-
 //HTML
   return (
     <section className={ `${styles.relier}`}>
@@ -231,16 +227,17 @@ export default function QuestionRelier({setGame, Sources, setSources}) {
                     ></canvas>
                 </div>
                 <div className={ `${styles.game_albums}`}>
-                <img className={`${styles.cover1} ${styles.cover} `} src={'Timeline/'+Sources[0].img}></img>
-                <img className={`${styles.cover2} ${styles.cover} `} src={'Timeline/'+Sources[1].img}></img>
-                <img className={`${styles.cover3} ${styles.cover} `} src={'Timeline/'+Sources[2].img}></img>
+                <img className={`${styles.cover1} ${styles.cover} `} src={'Timeline/'+Sources[0].img} data-artiste={Sources[0].Artiste}></img>
+                <img className={`${styles.cover2} ${styles.cover} `} src={'Timeline/'+Sources[1].img} data-artiste={Sources[1].Artiste}></img>
+                <img className={`${styles.cover3} ${styles.cover} `} src={'Timeline/'+Sources[2].img} data-artiste={Sources[2].Artiste}></img>
                 </div>
             </div>
             <div className={ `${styles.chrono}`}>
                 <Chrono 
                     redirection = {'resultat-relier'}
                     setGame={setGame}
-                    chrono={600000}
+                    save = {save}
+                    chrono={20000}
                 />
             </div>
         </div>
