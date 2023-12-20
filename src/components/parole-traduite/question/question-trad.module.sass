@@ -1,0 +1,88 @@
+@import ../../../styles/variables
+
+.containerQuest
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .containerTrad
+        background-color: rgba(255, 255, 255, 0.392)
+        margin: 2vw
+        border-radius: 3vw
+        margin-top: 10vw 
+        width: 80%
+
+        .traduction
+            color: white
+            font-size: 1.5vw
+            padding: 1vw
+            font-family: 'Acme'
+    
+    .containerButtons
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        width: 100%
+
+        .button
+            color: white
+            font-weight: 800
+            font-size: 1.2vw
+            border-radius: 3vw
+            background: linear-gradient(to right, $yellow, $purple)
+            padding: 1vw
+            user-select: none
+            font-family: 'Acme'
+            transition: 1s
+
+        
+        .button1
+            display: none            
+            transition: 1s
+
+        
+        .button2
+            display: none            
+            transition: 1s
+
+        .button3
+            display: none            
+            transition: 1s
+
+
+    .aide
+        color: white
+        font-size: 1.3vw
+        padding: 2vw
+        font-family: 'Acme'
+
+
+.block
+    display: block
+
+.none
+    display: none
+
+.check
+    @include absoluteCenter
+    top: 2vh
+    left: 2vw
+    animation: gelatine 1s forwards linear
+
+
+.cross
+    @include absoluteCenter
+    top: 2vh
+    left: 2vw
+    animation: gelatine 1s forwards linear
+
+.buzzer
+    color: $yellow
+    font-size: 1.5vw
+    padding: 1vw
+    font-family: 'Acme'
+    @include absoluteCenter
+    top: 8vh
+    left: 10vw
+    animation: gelatine 1s forwards linear

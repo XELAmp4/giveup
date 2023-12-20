@@ -1,10 +1,9 @@
 import styles from './zoneQuestion.module.sass'
 import Titre from '../Titre/Titre'
 import Timeline from '../Timeline/timeline'
+import Traduction from '../parole-traduite/parole-traduite'
 import Parametres from '../Parametres/Parametres'
 import { useParty } from '../../providers/party-provider'
-
-
 
 
 export default function ZoneQuestion({}) {
@@ -25,6 +24,11 @@ export default function ZoneQuestion({}) {
     case 'timeline':
         content = (
           <Timeline/>
+        )
+        break;
+    case 'traduction':
+        content = (
+          <Traduction/>
         )
         break;
     default:

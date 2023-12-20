@@ -50,6 +50,14 @@ function App() {
           />
       )
       break
+    case 'traduction':
+      content = (
+        <Indication
+            isAnimate={false}
+            content={"Trouver le titre de cette musique traduite"}
+          />
+      )
+      break
     default:
       break;
   }

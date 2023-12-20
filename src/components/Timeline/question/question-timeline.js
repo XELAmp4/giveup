@@ -43,7 +43,8 @@ export default function Question({setGame, Sources, setSources}) {
             <Chrono 
                 redirection = {'resultat-timeline'}
                 setGame={setGame}
-                chrono={5}
+                chrono={15}
+                button={'Valider'}
             />
             <p>Récent</p>
         </div>
