@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Chrono from '../../chrono/chrono';
 
 // eslint-disable-next-line no-empty-pattern
-export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste}) {
+export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste,}) {
     const canvasPOINTSRef = useRef(null);
     const canvasLINESRef = useRef(null);
     let [points, setPoints] = useState([]);
@@ -160,6 +160,11 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
     }
     };
 
+
+    // useEffect(() => {
+    //     // 'save' has been updated, you can perform actions here
+    //     console.log(save);
+    // }, [save]);
     
   
     const handlePointerMove = (e) => {
@@ -171,28 +176,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
     }
     };
 
-
-    // const getRandomInt = (max) =>  {return Math.floor(Math.random() * max);}
-    // const createList = (datas) => {
-    //     let n1 = getRandomInt(3);
-    //     let n2 = getRandomInt(3);
-    //     while (n2 == n1) {
-    //         n2 = getRandomInt(3);  
-    //     }
-    //     let n3 = getRandomInt(3);
-    //     while ((n3 == n1) || (n3 == n2)) {
-    //         n3 = getRandomInt(3);  
-    //     }
-    //     let res=["","",""];
-    //     res[n1]= datas[0];
-    //     res[n2]= datas[1];
-    //     res[n3]= datas[2];
-      
-    //     return res;
-    // }
-
-    // const liste = createList(Sources);
-
+    
     
 //HTML
   return (
@@ -236,7 +220,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                 <Chrono 
                     redirection = {'resultat-relier'}
                     setGame={setGame}
-                    chrono={20000}
+                    chrono={10}
                 />
             </div>
         </div>
