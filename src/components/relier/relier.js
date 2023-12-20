@@ -1,7 +1,7 @@
 import ExplicationRelier from './explication/explication-relier'
 import QuestionRelier from './question/question-relier'
 import ResultatRelier from './resultat/resultat-relier'
-import { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import cover from '../../assets/data/cover.json'
 
 
@@ -51,7 +51,7 @@ export default function Relier({}) {
     return res;
 }
 
-const liste = createList(Sources);
+const liste = useMemo(() => createList(Sources), [Sources]);
 
 console.log("init ",liste);
 
