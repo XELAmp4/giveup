@@ -6,6 +6,7 @@ import cover from '../../assets/data/cover.json'
 
 
 export default function Traduction({}) {
+    const [buzzer, setBuzzer] = useState(null);
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(x){
       var rand1 = Math.floor(Math.random()*x);    
@@ -57,6 +58,8 @@ export default function Traduction({}) {
             propo={propo}
             index={index}
             setGame={setGame}
+            buzzer={buzzer}
+            setBuzzer={setBuzzer}
           />
         )
         break;
@@ -64,6 +67,7 @@ export default function Traduction({}) {
     content = (
       <TraductionResult
       index={propo[0]}
+      gagnant={buzzer}
       />
     )
     break;
