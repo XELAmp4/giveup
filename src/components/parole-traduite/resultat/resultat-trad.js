@@ -1,9 +1,6 @@
 import styles from './resultat-trad.module.sass'
-import cover from '../../../assets/data/cover.json'
 
 export default function TraductionResult({index, gagnant}) {
-
-
   return( 
   <section className={styles.resultat}>
     <h1>La réponse est ...</h1>

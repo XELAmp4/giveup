@@ -1,5 +1,4 @@
 import styles from './question-trad.module.sass';
-import cover from '../../../assets/data/cover.json';
 import { useState, useEffect } from 'react';
 
 export default function Question({ propo, index, setGame, buzzer, setBuzzer}) {
