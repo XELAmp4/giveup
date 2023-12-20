@@ -239,7 +239,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                     chrono={20}
                 />
             </div>
-        </div>
+         </div>
     </section>
     )
 }
