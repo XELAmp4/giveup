@@ -1,25 +1,49 @@
 import styles from './question-trad.module.sass';
 import { useState, useEffect } from 'react';
 
-export default function Question({ propo, index, setGame, buzzer, setBuzzer}) {
+export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJoueur}) {
      const text = propo[0];
   const [correc, setcorrec] = useState('');
 
   useEffect(() => {
     const handleKeyPress = (event) => {
-      const buzzerKeyMap = {
-        a: 'Joueur 1',
-        t: 'Joueur 2',
-        u: 'Joueur 3',
-        p: 'Joueur 4',
-      };
+          if(nbJoueur === 2){
+               const buzzerKeyMap = {
+                    a: 'Joueur 1',
+                    t: 'Joueur 2',
+               };
+               const buzzerName = buzzerKeyMap[event.key];
 
-      const buzzerName = buzzerKeyMap[event.key];
+               if (buzzer === null && buzzerName) {
+               setBuzzer(buzzerName);
+               setcorrec(buzzerName);
+               }
+          }if(nbJoueur === 3){
+               const buzzerKeyMap = {
+                    a: 'Joueur 1',
+                    t: 'Joueur 2',
+                    u: 'Joueur 3',
+               };
+               const buzzerName = buzzerKeyMap[event.key];
 
-      if (buzzer === null && buzzerName) {
-        setBuzzer(buzzerName);
-        setcorrec(buzzerName);
-      }
+               if (buzzer === null && buzzerName) {
+               setBuzzer(buzzerName);
+               setcorrec(buzzerName);
+               }
+          }if(nbJoueur === 4){
+               const buzzerKeyMap = {
+                    a: 'Joueur 1',
+                    t: 'Joueur 2',
+                    u: 'Joueur 3',
+                    p: 'Joueur 4',
+                  };
+               const buzzerName = buzzerKeyMap[event.key];
+     
+               if (buzzer === null && buzzerName) {
+               setBuzzer(buzzerName);
+               setcorrec(buzzerName);
+               }
+          }
     };
 
     window.addEventListener('keypress', handleKeyPress);

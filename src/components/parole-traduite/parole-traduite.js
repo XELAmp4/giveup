@@ -3,9 +3,14 @@ import ExplicationTrad from './explication/explication-trad';
 import TraductionResult from './resultat/resultat-trad'
 import { useState } from 'react';
 import cover from '../../assets/data/cover.json'
+import { useParty } from '../../providers/party-provider';
+
 
 
 export default function Traduction({}) {
+  const { party, setParty } = useParty()
+  console.log(party.playerNumber);
+
     const [buzzer, setBuzzer] = useState(null);
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(x){
@@ -60,6 +65,7 @@ export default function Traduction({}) {
             setGame={setGame}
             buzzer={buzzer}
             setBuzzer={setBuzzer}
+            nbJoueur={party.playerNumber}
           />
         )
         break;
