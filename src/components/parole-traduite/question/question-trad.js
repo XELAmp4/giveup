@@ -34,7 +34,6 @@ export default function Question({ propo, index, setGame, buzzer, setBuzzer}) {
       return;
     }
 
-    console.log(JSON.stringify(text) === JSON.stringify(propo[index]));
     if (JSON.stringify(text) !== JSON.stringify(propo[index])) {
       setcorrec(button);
     } else {
