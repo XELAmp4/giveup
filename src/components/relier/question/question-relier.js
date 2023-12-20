@@ -236,7 +236,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                 <Chrono 
                     redirection = {'resultat-relier'}
                     setGame={setGame}
-                    save = {save}
                     chrono={20000}
                 />
             </div>
