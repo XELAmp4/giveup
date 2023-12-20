@@ -8,6 +8,8 @@ import cover from '../../assets/data/cover.json'
 export default function Relier({}) {
 
     const [save, setSave] = useState([]);
+    // const [artistes, setArtistes] = useState([]);
+
 
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(){
@@ -52,13 +54,11 @@ export default function Relier({}) {
 }
 
 const liste = useMemo(() => createList(Sources), [Sources]);
-
-console.log("init ",liste);
-
-
-
-
-
+const artistes = {
+  G1: liste[0].Artiste,
+  G2: liste[1].Artiste,
+  G3: liste[2].Artiste,
+};
 
   switch (gameT) {
     case 'explication-relier':
@@ -76,6 +76,7 @@ console.log("init ",liste);
           setSources={setSources}
           save = {save}
           setSave = {setSave}
+          artistes = {artistes}
           liste = {liste}
           />
         )
@@ -85,6 +86,7 @@ console.log("init ",liste);
           <ResultatRelier
             Sources={Sources}
             save = {save}
+            artistes={artistes}
           />
         )
         break;
