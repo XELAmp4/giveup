@@ -9,8 +9,6 @@ import { useParty } from '../../providers/party-provider';
 
 export default function Traduction({}) {
   const { party, setParty } = useParty()
-  console.log(party.playerNumber);
-
     const [buzzer, setBuzzer] = useState(null);
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(x){
