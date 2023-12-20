@@ -17,7 +17,6 @@ import {
 import ImageDivide from './imageDivide';
 import Chrono from '../../chrono/chrono';
 import styles from './puzzle.module.sass';
-import { shuffle } from 'gsap';
 
 export default function Puzzle({setGame, orderCase, setOrderCase, elements, setElements, sourceCover, pochette, setPochette} ) {
   
