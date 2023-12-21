@@ -1,11 +1,20 @@
 import styles from './resultat-timeline.module.sass'
 import { useState, useEffect } from 'react';
+import { useParty } from '../../../providers/party-provider';
+import Chrono from '../../chrono/chrono';
 
 
-export default function ResultatTimeline({Sources}) {
+export default function ResultatTimeline({Sources, setGame}) {
   const [date, setDate] = useState([Sources[0].Sortie, Sources[1].Sortie, Sources[2].Sortie]);
   const [img, setImg] = useState([Sources[0], Sources[1], Sources[2]]);
-  const [correc, setcorrec] = useState(false)
+  const [correc, setcorrec] = useState(false);
+  const { party, setParty } = useParty();
+  const { currentGameIndex, setCurrentGameIndex } = useParty();
+  const { currentTourIndex, setCurrentTourIndex } = useParty();
+  const {redirectionGame, setRedirectionGame} = useParty();
+  console.log(party,'party');
+  
+
 
   useEffect(() => {
       const timestamp1 = Sources[0].date;
@@ -14,6 +23,17 @@ export default function ResultatTimeline({Sources}) {
       console.log(timestamp1, timestamp2, timestamp3)
       var tabdate = [];
       var tabsrc = [];
+      const nextIndex = currentGameIndex + 1;
+      console.log(currentGameIndex,'currentGameIndex');
+      console.log(nextIndex,'nextIndex');
+      
+      // party.deroulement[0][nextIndex];
+      setCurrentGameIndex(nextIndex);
+      setRedirectionGame(`${party.deroulement[currentTourIndex][nextIndex]}`);
+      console.log(party.deroulement[currentTourIndex][nextIndex],'redirectionGame');
+      
+
+      
   
       if (timestamp1 < timestamp2) {
         console.log('Date 1 avant Date 2');
@@ -93,6 +113,14 @@ export default function ResultatTimeline({Sources}) {
       <path fill-rule="evenodd" clip-rule="evenodd" d="M733.334 400C733.334 584.093 584.094 733.333 400 733.333C215.905 733.333 66.667 584.093 66.667 400C66.667 215.905 215.905 66.6666 400 66.6666C584.094 66.6666 733.334 215.905 733.334 400ZM534.344 298.989C544.107 308.752 544.107 324.581 534.344 334.343L367.677 501.01C357.914 510.773 342.087 510.773 332.323 501.01L265.656 434.343C255.893 424.58 255.893 408.753 265.656 398.99C275.419 389.227 291.248 389.227 301.011 398.99L350 447.977L424.494 373.483L498.99 298.989C508.754 289.226 524.58 289.226 534.344 298.989Z" fill="#2CC259"/>
     </svg>
     </div>
+    <Chrono 
+      redirection = {party.pageActive}
+      setGame={setGame}
+      chrono={1}
+      button={'Valider'}
+      redirectionGameBoolean={true}
+      redirectionGame={redirectionGame}
+    />
   </section>
   )
 }

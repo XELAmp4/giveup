@@ -71,6 +71,7 @@ export default function Traduction({}) {
     content = (
       <TraductionResult
       index={propo[0]}
+      setGame={setGame}
       gagnant={buzzer}
       />
     )

@@ -14,6 +14,7 @@ export default function ExplicationTimeline({setGame}) {
       setGame={setGame}
       redirection={'question-timeline'}
       button={'Passer !'}
+      redirectionGameBoolean={false}
     />
   </section>
   )

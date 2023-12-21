@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react';
 import styles from './chrono.module.sass'
+import { useParty } from '../../providers/party-provider';
 
 
-
-export default function Chrono({chrono, setGame, redirection, button}) {
+export default function Chrono({chrono, setGame, redirection, button, redirectionGameBoolean, redirectionGame}) {
   const [count, setCount] = useState(chrono); 
-
+  const { party, setParty } = useParty();
+  const { currentGameIndex, setCurrentGameIndex } = useParty();
 
   useEffect(() => { 
 
@@ -13,12 +14,27 @@ export default function Chrono({chrono, setGame, redirection, button}) {
       const interval = setInterval(() => { 
           setCount(count - 1); 
           if(count === 0)
-            setGame(redirection);
+            
+            
+          if (redirectionGameBoolean === true) {
+            setParty((prevParty) => ({
+              ...prevParty,
+              pageActive: redirectionGame,
+            })) 
+            console.log(party,'derouChrono');
+            console.log(party.pageActive,'ActiveChrono');
+            
+              setGame('explication-'+redirection)
+            }else {
+              setGame(redirection)
+            }
+          ;
       }, 1000); 
 
       //Clearing the interval 
-     
       return () => clearInterval(interval);
+      
+      
   }, [count]); 
 
   return( 
