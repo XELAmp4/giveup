@@ -10,9 +10,10 @@ export default function ExplicationRelier({setGame}) {
     <p className={styles.exp}>L'objectif est de relier l'artiste a ca cover avant le temp imparti.</p>
     <img src='Timeline/exemple-timeline.png' alt='Screen du jeu'></img>
     <Chrono 
-      chrono={1}
+      chrono={20}
       setGame={setGame}
       redirection={'question-relier'}
+      button={'Passer !'}
     />
   </section>
   )

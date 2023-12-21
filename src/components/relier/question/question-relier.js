@@ -221,6 +221,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                     redirection = {'resultat-relier'}
                     setGame={setGame}
                     chrono={10}
+                    button={'Valider'}
                 />
             </div>
          </div>
