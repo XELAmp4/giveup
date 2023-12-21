@@ -10,7 +10,8 @@ import RedirectionPuzzle from '../puzzle/redirectionPuzzle'
 export default function ZoneQuestion({}) {
   const { party, setParty } = useParty();
   let content;
-  // console.log(party.pageActive);
+  console.log(party.pageActive,'zone');
+  
   switch (party.pageActive) {
     case 'home':
       content = (

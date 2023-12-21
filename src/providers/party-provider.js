@@ -17,11 +17,14 @@ export const PartyProvider = ({
         playerNumber: 2,
         lap: 2,
         pageActive: 'home',
-        deroulement: []
+        deroulement: [],
+        points: []
     });
-
+    const [currentGameIndex, setCurrentGameIndex] = useState(0);
+    const [currentTourIndex, setCurrentTourIndex] = useState(0);
+    const [redirectionGame, setRedirectionGame] = useState(0);
     return (
-        <PartyContext.Provider value={{ party, setParty }}>
+        <PartyContext.Provider value={{ party, setParty, currentGameIndex, setCurrentGameIndex, currentTourIndex, setCurrentTourIndex, redirectionGame, setRedirectionGame}}>
             {children}
         </PartyContext.Provider>
     )

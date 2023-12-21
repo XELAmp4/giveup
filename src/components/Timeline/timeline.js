@@ -47,6 +47,7 @@ const source = random(cover.length);
     case 'resultat-timeline':
         content = (
           <ResultatTimeline
+            setGame={setGame}
             Sources={Sources}
           />
         )

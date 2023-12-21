@@ -45,6 +45,7 @@ export default function Question({setGame, Sources, setSources}) {
                 setGame={setGame}
                 chrono={15}
                 button={'Valider'}
+                redirectionGameBoolean={false}
             />
             <p>Récent</p>
         </div>

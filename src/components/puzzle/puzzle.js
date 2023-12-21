@@ -22,9 +22,9 @@ export default function Puzzle({}) {
   //contient les 3 noms des fichiers des images
   // const [Sources, setSources] = useState([cover[source[0]], cover[source[1]], cover[source[2]]]);
 
-  const [gameT, setGame] = useState('explication-puzzle');
+  const [game, setGame] = useState('explication-puzzle');
   let content;
-  switch (gameT) {
+  switch (game) {
     case 'explication-puzzle':
         content = (
           <ExplicationPuzzle
