@@ -181,7 +181,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
 //HTML
   return (
     <section className={ `${styles.relier}`}>
-        
+        <h1>Question Relier</h1>
         <div className="texte">
 
             <div className={ `${styles.game_container}`}>
@@ -211,9 +211,9 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                     ></canvas>
                 </div>
                 <div className={ `${styles.game_albums}`}>
-                <img className={`${styles.cover1} ${styles.cover} `} src={'Timeline/'+Sources[0].img} data-artiste={Sources[0].Artiste}></img>
-                <img className={`${styles.cover2} ${styles.cover} `} src={'Timeline/'+Sources[1].img} data-artiste={Sources[1].Artiste}></img>
-                <img className={`${styles.cover3} ${styles.cover} `} src={'Timeline/'+Sources[2].img} data-artiste={Sources[2].Artiste}></img>
+                    <img className={`${styles.cover1} ${styles.cover} `} src={'Timeline/'+Sources[0].img} data-artiste={Sources[0].Artiste}></img>
+                    <img className={`${styles.cover2} ${styles.cover} `} src={'Timeline/'+Sources[1].img} data-artiste={Sources[1].Artiste}></img>
+                    <img className={`${styles.cover3} ${styles.cover} `} src={'Timeline/'+Sources[2].img} data-artiste={Sources[2].Artiste}></img>
                 </div>
             </div>
             <div className={ `${styles.chrono}`}>

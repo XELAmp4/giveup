@@ -15,11 +15,35 @@
             canvas
                 position: absolute
                 border: none
-
-        &_albums
-            max-width: 25%
+        &_artistes
             display: flex
             flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 58vh
+            margin-left: 0vw
+            margin-right: -5vw
+
+            p
+                color: white
+                font-weight: 600
+                font-size: 1.9vw
+
+        &_albums
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 58vh
+            margin-left: -5vw
+
             .cover
-                width: 35%
-                aspect-ratio: 1/1
+                width: 10vw
+                transition: 0.5s
+                border-radius: 20px
+
+.relier>h1
+    font-size: 4vw
+    color: white
+    position: absolute
+    top: 0
