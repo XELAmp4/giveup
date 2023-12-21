@@ -10,11 +10,11 @@ export default function ResultatTimeline({Sources, save, artistes}) {
   // console.log(save);
   // console.log(Sources);
   let correct;
-  let trouvezUnNomDeVariableWallahMoiLaFlemme;
+  let correc_front;
   let nbOk = 0;
   if (save.length !=3) {
       correct = false;
-      trouvezUnNomDeVariableWallahMoiLaFlemme = "fausse";
+      correc_front = "fausse";
   }else{
     save.forEach(relation => {
       if (relation[0][0] == "G") {
@@ -36,14 +36,14 @@ export default function ResultatTimeline({Sources, save, artistes}) {
 
   if (nbOk == 3) {
     correct = true;
-    trouvezUnNomDeVariableWallahMoiLaFlemme = "vraie";
+    correc_front = "vraie";
   }else{
-    trouvezUnNomDeVariableWallahMoiLaFlemme = "fausse";
+    correc_front = "fausse";
 
   }
   return( 
   <section className={styles.resultat}>
-    <h1>Votre réponse était {trouvezUnNomDeVariableWallahMoiLaFlemme}</h1>
+    <h1>Votre réponse était {correc_front}</h1>
     
   </section>
   )

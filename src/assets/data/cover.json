@@ -4,7 +4,13 @@
         "Titre": "Adieu",
         "Artiste": "Kik",
         "Sortie": "07/09/2023",
-        "date": "2023-09-07"
+        "date": "2023-09-07",
+        "musique": "Blue Monday",
+        "langue": "Francaise",
+        "parole": "Ah, parlons des rappeurs qui se font des gue-guerres, sans grand intérêt pendant qu y a des vrais guerres J'm en bats les couilles, j'représente le fruit d'la jeunesse qui déprime, j'suis le meilleur rappeur rapport qualité/prix Tu rêves de Paname depuis Validé, mon gars t'as pas idée à quel point paris c'est cuit (Pue la merde).",
+        "traduction": "Ah, let's talk about rappers who fight with each other, without much interest while there are real wars I don't give a damn, I represent the fruit of depressed youth, I'm the best rapper in terms of quality/price You've been dreaming of Paname since Validé, my boy, you have no idea how bad Paris is (Stinks of shit).",
+        "langueTrad": "Anglais"
+
 
     },
     {
@@ -12,14 +18,25 @@
         "Titre": "Garcon",
         "Artiste": "Luther",
         "Sortie": "03/06/2022",
-        "date": "2022-06-03"
+        "date": "2022-06-03",
+        "musique": "BLAKE & MORTIMER",
+        "langue": "Francaise",
+        "parole": "Des tonnes de maquettes à la poubelle J'veux des diamants sertis sur la coupelle (Coupelle) Rien à foutre de c'que les gens pensent de moi On finit tous enterrés sous terre (Merde) Tu dis que ton équipe est soudée Mais l'argent peut acheter n'importe qui, n'importe quoi (Vrai) J'soulèverais la planète peu importe le poids (Atlas) J'ai même pas atteint mon niveau maximal Pourquoi j'sais que j'suis déjà l'meilleur ?",
+        "traduction": "Tons of models in the trash I want diamonds set on the cup (Cup) I don't care what people think of me We all end up buried underground (Shit) You say your team is united But money can buy anyone, anything (True) I would lift the planet regardless of the weight (Atlas) I haven't even reached my maximum level Why do I know I'm already the best ?",
+        "langueTrad": "Anglais"
+
     },
     {
         "img": "Mylene-Farmer_cover.jpeg",
         "Titre": "L'emprise",
         "Artiste": "Mylene Farmer",
         "Sortie": "25/11/2022",
-        "date": "2022-11-25"
+        "date": "2022-11-25",
+        "musique":"Libertine",
+        "langue": "Francaise",
+        "parole": "Cendre de lune, petite bulle d'écume Perdue dans le vent, je brûle et je m'enrhume Mon corps a peur, la peau mouillée, j'ai plus d'âme Papa, ils ont violé mon cœur Je, je suis libertine Je suis une catin Je, je suis si fragile Qu'on me tienne la main",
+        "traduction": "Moon ash, little bubble of foam Lost in the wind, I burn and I catch a cold My body is afraid, my skin is wet, I have no more soul Dad, they violated my heart I, I am libertine I'm a whore I, I'm so fragile Hold my hand",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -27,7 +44,12 @@
         "Titre": "Trinity",
         "Artiste": "Laylow",
         "Sortie": "28/02/2020",
-        "date": "2020-02-28"
+        "date": "2020-02-28",
+        "musique":"Special",
+        "langue": "Francaise",
+        "parole": "Spécial, ah, ah Y a rien d'normal dans c'monde, pour celui qui est Spécial, ah, ah Quand tout l'monde te l'dit, soit pas très spé-spécial, ah, ah Mais y en a pour qui c'est dur à vivre, t'en a qui prennent le .38Spécial, ah, ah",
+        "traduction": "Special, ah, ah There is nothing normal in this world, for those who are Special, ah, ah When everyone tells you, don't be very special, ah, ah But there are some for whom it's hard to live, there are some who take the .38 Special, ah, ah",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -35,7 +57,12 @@
         "Titre": "For all the dogs",
         "Artiste": "Drake",
         "Sortie": "06/11/2023",
-        "date": "2023-11-06"
+        "date": "2023-11-06",
+        "musique":"God's Plan",
+        "langue": "Anglaise",
+        "parole": "God's plan, God's plan I hold back, sometimes I won't, yeah I feel good, sometimes I don't, ayy, don't I finessed down Weston Road, ayy, 'nessed Might go down a G-O-D, yeah, wait I go hard on Southside G, yeah, Way I make sure that north side eat And still",
+        "traduction": "Le plan de Dieu, le plan de Dieu Je me retiens, parfois je ne le ferai pas, ouais Je me sens bien, parfois non, ouais, non J'ai affiné Weston Road, ouais, j'ai fini Ça pourrait tomber sur un DIEU, ouais, attends Je vais dur sur Southside G, ouais, Way Je m'assure que le côté nord mange Et encore",
+        "langueTrad": "Francais"
 
     },
     {
@@ -43,7 +70,12 @@
         "Titre": "French cash",
         "Artiste": "Zed Yun Pavarotti",
         "Sortie": "17/05/2019",
-        "date": "2019-05-17"
+        "date": "2019-05-17",
+        "musique":"Lalaland",
+        "langue": "Francaise",
+        "parole": "J'achète v'là les merdes, car je connais leurs yeux J'vis sur un ballon, j'aime jeter les glaçons Sur les gens du club, car ils ont passé l'heure Pas l'droit d'm'ignorer, j'me suis amélioré J'voulais être comme eux, maintenant j'veux les acheter",
+        "traduction": "I buy that shit, because I know their eyes I live on a ball, I like to throw the ice cubes On the people at the club, because they spent the time No right to ignore me, I've improved I wanted to be like them, now I want to buy them",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -51,7 +83,12 @@
         "Titre": "Utopia",
         "Artiste": "Travis Scott",
         "Sortie": "26/07/2023",
-        "date": "2023-07-26"
+        "date": "2023-07-26",
+        "musique":"goosebumps",
+        "langue": "Anglaise",
+        "parole": "Yeah, when I'm with my squad I cannot do no wrong Yeah, saucin' in the city, don't get misinformed Yeah, they gon' pull up on you (Brr, brr, brr) Yeah, we gon' do some things, some things you can't relate Yeah, 'cause we from a place, a place you cannot stay",
+        "traduction": "Ouais, quand je suis avec mon équipe, tout me réussit Ouais, c’est bien moi qui parade dans la ville Ouais, ils vont te tirer dessus (Brr, brr, brr) Ouais, on fait des trucs dont t’as pas idée Ouais, parce qu’on vient d’un endroit où tu ne mettrais pas les pieds",
+        "langueTrad": "Francais"
 
     },
     {
@@ -59,14 +96,24 @@
         "Titre": "Unleashed",
         "Artiste": "Skillet",
         "Sortie": "08/07/2016",
-        "date": "2016-07-08"
+        "date": "2016-07-08",
+        "musique":"Monster",
+        "langue": "Anglaise",
+        "parole": "I feel it deep within, it's just beneath the skin I must confess that I feel like a monster I, I feel like a monster I, I feel like a monster",
+        "traduction": "Je le sens au plus profond de moi, c'est juste sous la peau Je dois avouer que je me sens comme un monstre Moi, je me sens comme un monstre Moi, je me sens comme un monstre",
+        "langueTrad": "Francais"
     },
     {
         "img": "Obispo_cover.jpeg",
         "Titre": "L'important c'est d'aimer",
         "Artiste": "Pascal Obispo",
         "Sortie": "22/02/2000",
-        "date": "2000-02-22"
+        "date": "2000-02-22",
+        "musique":"Lucie",
+        "langue": "Francaise",
+        "parole": "C'est pas marqué dans les livres, Que le plus important à vivre, Est de vivre au jour le jour. Le temps c'est de l'Amour...",
+        "traduction": "It's not written in the books, That the most important thing to live, Is to live day by day. Time is Love...",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -74,14 +121,25 @@
         "Titre": "NewJeans 2nd EP 'Get Up'",
         "Artiste": "NewJeans",
         "Sortie": "21/07/2023",
-        "date": "2023-07-21"
+        "date": "2023-07-21",
+        "musique":"OMG",
+        "langue": "Anglaise",
+        "langue2": "Coréenne",
+        "parole": "어디서든, 몇 번이든 There ain't nothing else that I would hold on to I hear his voice through all the noise 잠시라도 내 손 놓지 마, no, no 걱정 없잖아 'cause I got someone 혼자라도 괜찮아 'cause I love someone",
+        "traduction": "N'importe où, n'importe quand Il n'y a rien d'autre auquel je m'accrocherais J'entends sa voix à travers tout le bruit Ne lâche pas ma main même un instant, non, non Il n'y a pas lieu de s'inquiéter parce que j'ai quelqu'un C'est normal d'être seul parce que j'aime quelqu'un",
+        "langueTrad": "Francais"
     },
     {
         "img": "Moji_cover.jpeg",
         "Titre": "Temp d'aime",
         "Artiste": "Moji x Sboy",
         "Sortie": "11/06/2021",
-        "date": "2021-06-11"
+        "date": "2021-06-11",
+        "musique":"Ma go",
+        "langue": "Francaise",
+        "parole": "Hé bébé, dis-moi ce que t'as dans la tête Souder comme 10 doigts, j'me sens bien avec Rejoins-moi dehors, on fait les 400 coups J'aime bien ta robe et j'aime bien ce que t'as en dessous Avec toi j'me sens bien, ouais j'me sens bête C'est mon heure de gloire et je serai dans les temps Avec toi j'vois que toi et c'est embêtant Avec toi j'm'en fous grave du regard des gens",
+        "traduction": "Hey baby, tell me what's on your mind Solder like 10 fingers, I feel good with it Meet me outside, let's do the 400 moves I like your dress and I like what you have underneath With you I feel good, yeah I feel stupid It's my finest hour and I'll be on time With you I only see you and it's annoying With you I don't really care about people's looks",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -89,7 +147,13 @@
         "Titre": "Toutè Kalé",
         "Artiste": "Magic System",
         "Sortie": "01/04/2011",
-        "date": "2011-04-01"
+        "date": "2011-04-01",
+        "musique":"Magic in the air",
+        "langue": "Francaise",
+        "langue2": "Anglaise",
+        "parole": "Feel the magic in the air Allez, allez, allez Levez les mains en l'air Allez, allez, allez Feel the magic in the air Allez, allez, allez Levez les mains en l'air Allez, allez, allez",
+        "traduction": "Ressentez la magie dans l'air Come on, come on, come on Raise your hands in the air Come on, come on, come on Ressentez la magie dans l'air Come on, come on, go Raise your hands in the air Come on, come on, come on",
+        "langueTrad": "Francais/Anglais"
 
     },
     {
@@ -97,7 +161,12 @@
         "Titre": "The fame monster",
         "Artiste": "Lady gaga",
         "Sortie": "19/08/2008",
-        "date": "2008-08-19"
+        "date": "2008-08-19",
+        "musique":"Bloody mary",
+        "langue": "Anglaise",
+        "parole": "I'll dance, dance, dance With my hands, hands, hands Above my head, head, head Like Jesus said I'm gonna dance, dance, dance With my hands, hands, hands above my head Hands together, forgive him before he's dead, because",
+        "traduction": "Je danserai, danserai, danserai Avec mes mains, mes mains, mes mains Au dessus de ma tête, tête, tête Comme Jésus l'a dit Je vais danser, danser, danser Avec mes mains, mes mains, mes mains au dessus de ma tête Mains jointes, pardonne-lui avant il est mort, parce que",
+        "langueTrad": "Francais/Anglais"
 
     },
     {
@@ -105,7 +174,12 @@
         "Titre": "Détail",
         "Artiste": "koba la D",
         "Sortie": "23/10/2020",
-        "date": "2020-10-23"
+        "date": "2020-10-23",
+        "musique":"Daddy chocolat",
+        "langue": "Francaise",
+        "parole": "Elle veut que j'la baise pendant que ses parents sont pas là (hey, hey) Couleur ébène, elle m'appelle 'Daddy chocolat' (hey, hey) Tu veux la guerre, t'as pas d'quoi payer une collab' Eux ils critiquent et maintenant veulent faire l'accolade",
+        "traduction": "She wants me to fuck her while her parents are not there (hey, hey) Ebony color, she calls me 'Daddy chocolate' (hey, hey) You want war, you don't have enough to pay for a collab 'They criticize and now want to hug",
+        "langueTrad": "Anglais"
 
     },
     {
@@ -113,49 +187,84 @@
         "Titre": "Goulag",
         "Artiste": "Kaarism",
         "Sortie": "19/06/2021",
-        "date": "2021-06-19"
+        "date": "2021-06-19",
+        "musique":"Goulag",
+        "langue": "Francaise",
+        "parole": "J'suis dans l'bâtiment, je dirais même j'suis dans la cuisine (oof) Mon grand frère est à l'hopital parce que dans son café j'ai mis de la lean J'me suis fait monter en l'air en Belgique parce que j'ai filmé les meufs des vitrines (aaah)",
+        "traduction": "I'm in the building, I'd even say I'm in the kitchen (oof) My big brother is in the hospital because in his cafe I put on lean I got kicked up in the air in Belgium because I filmed the girls in the windows (aaah)",
+        "langueTrad": "Anglais"
     },
     {
         "img": "Jul_cover.jpeg",
         "Titre": "Extraterrestre",
         "Artiste": "Jul",
-        "Sortie": "03/06/2022",
-        "date": "2022-06-03"
+        "Sortie": "04/06/2022",
+        "date": "2022-06-03",
+        "musique":"On m'appelle l'ovni",
+        "langue": "Francaise",
+        "parole": "Je suis parti, je squatte plus le béton J'aide mes potes qui sont bés-tom Je sers, que ça retourne son veston Ils se reconnaissent dans mes sons Alcoolisé au guidon, je fais des doigts d'honneurs aux schmits Faut voir ce que nous vivons entre les histoires et les flûtes Que ça mitonne, oh oh Même plus je m'étonne, oh oh Et si mon heure sonne, oh oh",
+        "traduction": "I'm gone, I'm not squatting on the concrete anymore I'm helping my friends who are bers-toms I'm serving, it turns his jacket around They recognize themselves in my sounds Drunk on the handlebars, I give the schmits the middle finger You have to see what we live between stories and flutes Let it simmer, oh oh Even more I am surprised, oh oh And if my time comes, oh oh",
+        "langueTrad": "Anglais"
     },
     {
         "img": "joji_cover.jpeg",
         "Titre": "Nectar",
         "Artiste": "Joji",
         "Sortie": "24/09/2020",
-        "date": "2020-09-24"
+        "date": "2020-09-24",
+        "musique":"SLOW DANCING IN THE DARK",
+        "langue": "Anglaise",
+        "parole": "Give me reasons we should be complete You should be with him, I can't compete You looked at me like I was someone else, oh well Can't you see? (Can't you see?) I don't wanna slow dance (I don't want to slow dance) In the dark Dark",
+        "traduction": "Donne-moi des raisons pour lesquelles nous devrions être complets Tu devrais être avec lui, je ne peux pas rivaliser Tu m'as regardé comme si j'étais quelqu'un d'autre, eh bien, tu ne vois pas ? (Tu ne vois pas ?) Je ne veux pas danser lentement (Je ne veux pas danser lentement) Dans le noir",
+        "langueTrad": "Francais"
     },
     {
         "img": "indila_cover.jpg",
         "Titre": "Mini World",
         "Artiste": "indila",
         "Sortie": "01/01/2014",
-        "date": "2014-01-01"
+        "date": "2014-01-01", 
+        "musique":"Tourner dans le vide",
+        "langue": "Francaise",
+        "parole": "Lui, il est tout mon monde et bien plus que ça Seule, je crie son nom quand vient le désarroi Et puis tout s'effondre quand il n'est plus là J'aimerais tellement lui dire mais je n'ose pas",
+        "traduction": "Him, he is my whole world and much more than that Alone, I shout his name when distress comes And then everything collapses when he is no longer there I would so much like to tell him but I don't dare",
+        "langueTrad": "Anglais"
     },
     {
         "img": "Freeze-Corleone_cover.jpg",
         "Titre": "ADC",
         "Artiste": "Freeze Corleone",
         "Sortie": "11/09/2023",
-        "date": "2023-09-11"
+        "date": "2023-09-11",
+        "musique":"Freeze Raël",
+        "langue": "Francaise",
+        "parole": "J'fume des Runtz et des Gelati Rital dans l'milieu comme Marco Verratti Gros aqua d'loud dans la Maserati Quoi qu'il arrive, j'prends ma part, Chen Zen aka TVA Faut qu'j'pèse comme un propriétaire de club de Liga BBVA J'ai mes droits, j'ai mes masters J'fume des OG, j'fume des master",
+        "traduction": "I smoke Runtz and Gelati Rital in the middle like Marco Verratti Big aqua d'loud in the Maserati Whatever happens, I take my part, Chen Zen aka TVA I have to weigh like a car owner BBVA Liga club I have my rights, I have my masters I smoke OG, I smoke masters",
+        "langueTrad": "Anglais"
     },
     {
         "img": "Fatal-bazooka_cover.jpeg",
         "Titre": "T'as vu",
         "Artiste": "Fatal Bazooka",
         "Sortie": "28/05/2007",
-        "date": "2007-05-28"
+        "date": "2007-05-28",
+        "musique":"Fous ta cagoule",
+        "langue": "Francaise",
+        "parole": "Représente le hardcore des montagnes en direct de la Savoie Savoie ou bien (non, ça va pas) Mec c'est l'pôle nord, on s'gèle les grelots Bordel, il fait plus froid qu'dans ton frigo (brr) Un pied dehors direct, c'est la pharyngite La morve au nez, les microbes qui s'agiten Alors, écoute avant qu'il sera trop tard Avant que tu seras tout dur comme un surgelé Picard (poh, poh) On est pas venus pour jouer les papas-poules Mais un conseil, mon gars, fous ta cagoule",
+        "traduction": "Represents the hardcore of the mountains live from Savoie Savoie or (no, it's not okay) Dude it's the north pole, we're freezing our bells Damn, it's colder than in your fridge (brr) One foot outside straight away, it's pharyngitis The snot in the nose, the microbes that are stirring So, listen before it's too late Before you're as hard as frozen food Picard (poh, poh) We didn't come for play the daddy chickens But some advice, my guy, take off your hood",
+        "langueTrad": "Anglais"
     },
     {
         "img": "coilguns_cover.jpeg",
         "Titre": "Watchwinders",
-        "Artiste": "NewJeans",
+        "Artiste": "coilguns",
         "Sortie": "25/10/2019",
-        "date": "2019-10-25"
+        "date": "2019-10-25",
+        "musique":"Millennials",
+        "langue": "Anglaise",
+        "parole": "I-M-C, I-M-C Vacuum cleaners of all hidden stories Crawling down, down, below the line All the way to furthest eyries Self-growing trees, self-growing trees Crawling down unconscious memories Crawling down, down, below the lines Of fear",
+        "traduction": "I-M-C, I-M-C Aspirateurs de toutes les histoires cachées Rampant vers le bas, en bas, en dessous de la ligne Jusqu'aux aires les plus éloignées Arbres auto-croissants, arbres auto-croissants Ramper vers le bas des souvenirs inconscients Ramper vers le bas, vers le bas, sous les lignes De la peur",
+        "langueTrad": "Francais"
 
     }
     

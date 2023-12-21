@@ -1,0 +1,48 @@
+@import ../../../styles/variables
+@import ../../../styles/animations
+
+.resultat
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .gagnant
+        color: $yellow
+        @include absoluteCenter
+        top: 11vh
+        left: 17vw
+        animation: gelatine 1s forwards linear
+    div
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        margin-top: 7vw
+
+    .cover
+        width: 12vw
+
+    h2
+        color: white
+        font-family: 'Acme'
+        font-size: 1.5vw
+
+
+    p
+        color: white
+        padding: 3vw
+        margin-top: -0.5vw
+        font-family: 'Acme'
+        font-size: 1.5vw
+
+    h1
+        font-family: 'Acme'
+
+
+.check
+    @include absoluteCenter
+    top: -5vh
+    left: -4vw
+    animation: gelatine 1s forwards linear

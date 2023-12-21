@@ -14,8 +14,8 @@ export const PartyProvider = ({
 }) => {
     
     const [party, setParty] = useState({
-        playerNumber: 0,
-        lap: 0,
+        playerNumber: 2,
+        lap: 2,
         pageActive: 'home',
         deroulement: []
     });
