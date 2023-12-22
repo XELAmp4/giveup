@@ -84,6 +84,7 @@ const artistes = {
     case 'resultat-relier':
         content = (
           <ResultatRelier
+            setGame={setGame}
             Sources={Sources}
             save = {save}
             artistes={artistes}

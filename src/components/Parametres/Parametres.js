@@ -19,7 +19,6 @@ export default function Parametres() {
 
     const submit = () => {
 
-
         const games = ['timeline', 'puzzle', 'relier'];
 
         let array = [];
@@ -31,7 +30,6 @@ export default function Parametres() {
             array.push(randomOrder.concat(['traduction']));
         }
         
-
         const initialPoints = Array(boutonActifUpers).fill(0); // Crée un tableau de zéros avec la taille boutonActifUpers
 
         setParty((prev) => {

@@ -35,20 +35,16 @@ export default function ZoneQuestion({}) {
           <Traduction/>
         )
         break;
-
     case 'relier':
       content = (
         <Relier/>
       )
       break;
-
-
     case 'puzzle':
     content = (
       <RedirectionPuzzle />
     )
     break;
-
     default:
       break;
   }
