@@ -9,8 +9,8 @@ export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJ
     const handleKeyPress = (event) => {
           if(nbJoueur === 2){
                const buzzerKeyMap = {
-                    a: 'Joueur 1',
-                    t: 'Joueur 2',
+                    a: 1,
+                    t: 2,
                };
                const buzzerName = buzzerKeyMap[event.key];
 
@@ -20,9 +20,9 @@ export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJ
                }
           }if(nbJoueur === 3){
                const buzzerKeyMap = {
-                    a: 'Joueur 1',
-                    t: 'Joueur 2',
-                    u: 'Joueur 3',
+                    a: 1,
+                    t: 2,
+                    u: 3,
                };
                const buzzerName = buzzerKeyMap[event.key];
 
@@ -32,10 +32,10 @@ export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJ
                }
           }if(nbJoueur === 4){
                const buzzerKeyMap = {
-                    a: 'Joueur 1',
-                    t: 'Joueur 2',
-                    u: 'Joueur 3',
-                    p: 'Joueur 4',
+                    a: 1,
+                    t: 2,
+                    u: 3,
+                    p: 4,
                   };
                const buzzerName = buzzerKeyMap[event.key];
      
@@ -72,7 +72,7 @@ export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJ
   return (
      <section className={styles.containerQuest}>
         <h1>Question *</h1>
-        {buzzer && <p className={styles.buzzer}>Au tour de : {buzzer}</p>}
+        {buzzer && <p className={styles.buzzer}>Au tour de : Joueur {buzzer}</p>}
         <div className={styles.containerTrad}>
              <p className={styles.traduction}>{text.traduction}</p>
         </div>

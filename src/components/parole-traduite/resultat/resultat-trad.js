@@ -4,7 +4,7 @@ export default function TraductionResult({index, gagnant}) {
   return( 
   <section className={styles.resultat}>
     <h1>La réponse est ...</h1>
-    <p className={styles.gagnant}>Bravo {gagnant} tu as trouvé la bonne réponse !</p>
+    <p className={styles.gagnant}>Bravo Joueur {gagnant} tu as trouvé la bonne réponse !</p>
     <div>
       <p>{index.musique} de {index.Artiste}</p>
       <img className={styles.cover} src={'Timeline/'+index.img} alt=''></img>
