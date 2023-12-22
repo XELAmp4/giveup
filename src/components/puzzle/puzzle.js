@@ -9,19 +9,6 @@ export default function Puzzle({}) {
   const [elements, setElements] = useState([]);
   const [orderCase, setOrderCase] = useState([]);
   const [pochette, setPochette] = useState([]);
-
-
-
-    
-
-
-    //fonction permettant de choisir trois images totalement aléatoirement
-  
-
-
-  //contient les 3 noms des fichiers des images
-  // const [Sources, setSources] = useState([cover[source[0]], cover[source[1]], cover[source[2]]]);
-
   const [game, setGame] = useState('explication-puzzle');
   let content;
   switch (game) {

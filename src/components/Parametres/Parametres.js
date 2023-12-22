@@ -39,9 +39,7 @@ export default function Parametres() {
 
         setParty((prev) => {
             const newDatas = { ...prev };
-            newDatas.deroulement = array;
-            console.log(newDatas.deroulement,'newDatas.deroulement');
-            
+            newDatas.deroulement = array;            
             newDatas.pageActive = array[0][0];
             newDatas.points = initialPoints; // Initialise le tableau des points avec des zéros
             setCurrentGameIndex(0);

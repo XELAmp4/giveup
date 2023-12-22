@@ -18,9 +18,8 @@ export default function Timeline({}) {
           rand3 = Math.floor(Math.random()*x); 
       } 
       return [rand1, rand2, rand3]
-}
-const source = random(cover.length);
-  console.log(source, 'img')
+  }
+  const source = random(cover.length);
 
   //contient les 3 noms des fichiers des images
   const [Sources, setSources] = useState([cover[source[0]], cover[source[1]], cover[source[2]]]);
@@ -55,9 +54,9 @@ const source = random(cover.length);
     default:
       break;
     }
-return (
+  return (
     <div>
         {content}
     </div>
   )
-}
+  }

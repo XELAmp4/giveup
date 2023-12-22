@@ -40,7 +40,6 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
     }
   
     pochette = random(21);
-    console.log(pochette, 'coverd');
     setPochette(pochette);
     const sourceCove = cover[pochette].img;
     
@@ -77,8 +76,6 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
     setOrderCase(order);
     setElements(newElements);
   
-    
-    
   }, []);
 
   const handleDragEnd = (event) => {
@@ -90,24 +87,13 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
       let overIndex = elements.findIndex((el) => el.id === over.id);
       orderCase[overIndex]= active.id;
       orderCase[activeIndex]= over.id;
-      console.log(orderCase, 'tetete');
-      console.log(activeIndex, 'activeIndex');
-      console.log(overIndex, 'overIndex');
-      console.log(elements, 'remanié');
-      
       if (activeIndex !== -1 && overIndex !== -1) {
         const reorderedElements = arraySwap([...elements], activeIndex, overIndex);
         setElements(reorderedElements);
       }
     }
   }
-  
-
-    // if (activeIndex === -1 || overIndex === -1) {
-    //   return;
-    // }
-
-
+ 
   return (
     <DndContext
       sensors={sensors}

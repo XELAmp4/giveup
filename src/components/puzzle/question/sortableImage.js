@@ -1,7 +1,6 @@
 // SortableImage.js
 import React from 'react';
 import { useSortable } from '@dnd-kit/sortable';
-import PartImage from './partImage';
 import styles from './puzzle.module.sass';
 
 export default function SortableImage({ data, elements, setElements, imgWidth, imgHeight}) {
