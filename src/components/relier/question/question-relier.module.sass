@@ -1,0 +1,50 @@
+@import ../../../styles/variables
+.relier
+    color: $white
+    .game
+        &_container
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            align-items: center
+            width: 100%
+
+            @include absoluteCenter
+        &_canva
+            position: relative
+            touch-action: none
+            canvas
+                position: absolute
+                border: none
+        &_artistes
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 58vh
+            margin-left: 0vw
+            margin-right: -5vw
+
+            p
+                color: white
+                font-weight: 600
+                font-size: 1.9vw
+
+        &_albums
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 58vh
+            margin-left: -5vw
+
+            .cover
+                width: 10vw
+                transition: 0.5s
+                border-radius: 20px
+
+.relier>h1
+    font-size: 4vw
+    color: white
+    position: absolute
+    top: 0

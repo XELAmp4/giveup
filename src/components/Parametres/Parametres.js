@@ -28,7 +28,6 @@ export default function Parametres() {
             }
             array[index].push('traduction');
         }
-
         const initialPoints = Array(boutonActifUpers).fill(0); // Crée un tableau de zéros avec la taille boutonActifUpers
 
         setParty((prev) => {
