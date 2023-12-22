@@ -25,7 +25,8 @@ export default function TraductionResult({index, gagnant, setGame}) {
       ...prevParty,
       points: updatedPoints,
     }));
-
+    console.log(party.points,'party.points');
+    
     
     if (nextTourIndex < party.lap) {
 

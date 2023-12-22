@@ -52,6 +52,7 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
           ...prevParty,
           points: updatedPoints,
       }));
+      console.log(party.points,'party.points');
     }
     console.log(party,'points');
     

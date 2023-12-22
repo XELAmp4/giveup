@@ -41,11 +41,16 @@ export default function Parametres() {
             const newDatas = { ...prev };
             newDatas.deroulement = array;
             console.log(newDatas.deroulement,'newDatas.deroulement');
-            
+            newDatas.lap = boutonActifTours;
             newDatas.pageActive = array[0][0];
             newDatas.points = initialPoints; // Initialise le tableau des points avec des zéros
             setCurrentGameIndex(0);
+            console.log(boutonActifTours,'boutonActifTours');
+            
+            console.log(party,'party');
+            
             return { ...newDatas };
+
         });
     };
 
