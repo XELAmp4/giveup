@@ -6,6 +6,7 @@ import Relier from '../relier/relier'
 import Parametres from '../Parametres/Parametres'
 import { useParty } from '../../providers/party-provider'
 import RedirectionPuzzle from '../puzzle/redirectionPuzzle'
+import Scoreboard from '../scoreboard/scoreboard'
 
 
 export default function ZoneQuestion({}) {
@@ -45,6 +46,11 @@ export default function ZoneQuestion({}) {
       <RedirectionPuzzle />
     )
     break;
+    case 'scoreboard':
+      content = (
+        <Scoreboard/>
+      )
+      break;
     default:
       break;
   }

@@ -40,7 +40,7 @@ export default function TraductionResult({index, gagnant, setGame}) {
       
       setRedirectionGame(`${party.deroulement[nextTourIndex][nextIndex]}`);
     }else{
-      setRedirectionGame(`home`)
+      setRedirectionGame(`scoreboard`)
     }    
   }, [])
 
