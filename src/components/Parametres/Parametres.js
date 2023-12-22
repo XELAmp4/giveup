@@ -38,7 +38,7 @@ export default function Parametres() {
             setCurrentGameIndex(0);
             return { ...newDatas };
         });
-    };
+    };//coucou
 
     return (
         <div className={`${styles.parametres}`}>
