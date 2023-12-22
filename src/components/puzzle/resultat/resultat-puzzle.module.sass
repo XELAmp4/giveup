@@ -1,0 +1,47 @@
+@import ../../../styles/variables
+
+.resultatPuzzle
+    .imageResultat 
+        width: 33vw
+        left: 3vw
+        top: 7vh
+        position: absolute
+        transition: 0.5s
+        border-radius: 20px
+    
+    .titreResultat
+        color: white
+        position: absolute
+        right: 32px
+        width: 29vw
+        font-size: 101px
+        position: absolute
+        top: 46px
+
+    .infoResultat
+        display: flex
+        flex-direction: column
+        position: absolute
+        max-width: 1011px
+        top: 23vh
+        left: 41vw
+    
+    p
+        font-size: 5em
+        color: white
+
+        
+    .check
+        @include absoluteCenter
+        top: 1vh
+        left: 1vw
+        animation: gelatine 1s forwards linear
+
+
+    .cross
+        @include absoluteCenter
+        top: 1vh
+        left: 1vw
+        animation: gelatine 1s forwards linear
+
+

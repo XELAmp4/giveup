@@ -31,9 +31,9 @@ export default function Question({setGame, Sources, setSources}) {
   return (
     <section className={styles.timeline}>
         <h1>Question Timeline</h1>
-        <img className={`${styles.cover1} ${ tab.includes(0) ? styles.selected : ''}`} onClick={()=>MajTab(0)} src={'Timeline/'+Sources[0].img} alt=''></img>
-        <img className={`${styles.cover2} ${ tab.includes(1) ? styles.selected : ''}`} onClick={()=>MajTab(1)} src={'Timeline/'+Sources[1].img} alt=''></img>
-        <img className={`${styles.cover3} ${ tab.includes(2) ? styles.selected : ''}`} onClick={()=>MajTab(2)} src={'Timeline/'+Sources[2].img} alt=''></img>
+        <img className={`${styles.cover1} ${ tab.includes(0) ? styles.selected : ''}`} onClick={()=>MajTab(0)} src={'cover/'+Sources[0].img} alt=''></img>
+        <img className={`${styles.cover2} ${ tab.includes(1) ? styles.selected : ''}`} onClick={()=>MajTab(1)} src={'cover/'+Sources[1].img} alt=''></img>
+        <img className={`${styles.cover3} ${ tab.includes(2) ? styles.selected : ''}`} onClick={()=>MajTab(2)} src={'cover/'+Sources[2].img} alt=''></img>
         <div className={styles.fleche}>
             <div className={styles.trait}></div>
             <div className={styles.triangle}></div>
@@ -45,6 +45,7 @@ export default function Question({setGame, Sources, setSources}) {
                 setGame={setGame}
                 chrono={15}
                 button={'Valider'}
+                redirectionGameBoolean={false}
             />
             <p>Récent</p>
         </div>

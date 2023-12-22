@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Chrono from '../../chrono/chrono';
 
 // eslint-disable-next-line no-empty-pattern
-export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste,}) {
+export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste}) {
     const canvasPOINTSRef = useRef(null);
     const canvasLINESRef = useRef(null);
     let [points, setPoints] = useState([]);
@@ -127,7 +127,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         };
     }
     const handlePointerDown = (e) => {
-        // console.log('click start');
         x = e.offsetX;
         y = e.offsetY;
         points.forEach(point => {
@@ -141,7 +140,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
     };
   
     const handlePointerUp = (e) => {
-    //   console.log('click end');
       if (drawing) {
         endX = e.offsetX; 
         endY = e.offsetY;
@@ -169,8 +167,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
     }
     };
 
-    
-    
 //HTML
   return (
     <section className={ `${styles.relier}`}>
@@ -204,20 +200,18 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
                     ></canvas>
                 </div>
                 <div className={ `${styles.game_albums}`}>
-                    <img className={`${styles.cover1} ${styles.cover} `} src={'Timeline/'+Sources[0].img} data-artiste={Sources[0].Artiste}></img>
-                    <img className={`${styles.cover2} ${styles.cover} `} src={'Timeline/'+Sources[1].img} data-artiste={Sources[1].Artiste}></img>
-                    <img className={`${styles.cover3} ${styles.cover} `} src={'Timeline/'+Sources[2].img} data-artiste={Sources[2].Artiste}></img>
+                    <img className={`${styles.cover1} ${styles.cover} `} src={'cover/'+Sources[0].img} data-artiste={Sources[0].Artiste}></img>
+                    <img className={`${styles.cover2} ${styles.cover} `} src={'cover/'+Sources[1].img} data-artiste={Sources[1].Artiste}></img>
+                    <img className={`${styles.cover3} ${styles.cover} `} src={'cover/'+Sources[2].img} data-artiste={Sources[2].Artiste}></img>
                 </div>
             </div>
-            <div className={ `${styles.chrono}`}>
-                <Chrono 
-                    redirection = {'resultat-relier'}
-                    setGame={setGame}
-                    chrono={10} //10sec
-                    button={'Valider'}
-                />
-            </div>
          </div>
+        <Chrono 
+            redirection = {'resultat-relier'}
+            setGame={setGame}
+            chrono={10} //10sec
+            button={'Valider'}
+            redirectionGameBoolean={false}/>
     </section>
     )
 }

@@ -1,7 +1,9 @@
 import './App.sass';
+import Puzzle from './components/puzzle/puzzle';
 import ZoneQuestion from './components/zoneQuestion/zoneQuestion';
 import Indication from './components/Indication/Indication'
 import { useParty } from './providers/party-provider';
+import RedirectionPuzzle from './components/puzzle/redirectionPuzzle';
 
 
 // Projet BUT MMI - Semestre 5 - Dispositifs intéractifs
@@ -13,6 +15,7 @@ import { useParty } from './providers/party-provider';
 // █  █▄▄█ █   ██     ██       █   █    
 // █▄▄▄▄▄▄▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄▄█    
 // BELLET Alexandre - COLLET Clément - BRAVARD Lorenzo
+
 
 
 function App() {
@@ -50,6 +53,7 @@ function App() {
           />
       )
       break
+
     case 'traduction':
       content = (
         <Indication
@@ -66,6 +70,16 @@ function App() {
           />
       )
       break
+
+
+    case 'puzzle':
+      content= (
+        <Indication
+            isAnimate={false}
+            content={"Résoudre le puzzle"}
+          />
+      )
+
     default:
       break;
   }
