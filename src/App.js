@@ -55,6 +55,14 @@ function App() {
         <Indication
             isAnimate={false}
             content={"Trouver le titre de cette musique traduite"}
+        />
+      )  
+      break
+    case 'relier':
+      content = (
+        <Indication
+            isAnimate={false}
+            content={"Relier les artiste à leurs albums"}
           />
       )
       break

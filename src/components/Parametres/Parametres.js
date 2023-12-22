@@ -27,7 +27,7 @@ export default function Parametres({}) {
     };
 
     const submit = () => {
-        const games = ['timeline','puzzle','simon','relier'];
+        const games = ['timeline','puzzle','relier'];
 
         let array =[];
             for (let index = 0; index < boutonActifTours; index++) {
@@ -42,7 +42,7 @@ export default function Parametres({}) {
                 const newDatas = {...prev};
                 newDatas.deroulement = array;
                 // newDatas.pageActive = array[0][0]; ligne finale qund tous les jeux seront prets :)
-                newDatas.pageActive = 'traduction';
+                newDatas.pageActive = 'relier';
                 return {...newDatas}
             })
     };
