@@ -118,6 +118,7 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
         <Chrono 
             redirection = {'resultat-puzzle'}
             setGame={setGame}
+            button={'Valider'}
             chrono={12}
         />
     </div>

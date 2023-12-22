@@ -25,7 +25,7 @@ export default function ResultatTimeline({Sources, setGame}) {
       const nextIndex = currentGameIndex + 1;
       console.log(currentGameIndex,'currentGameIndex');
       console.log(nextIndex,'nextIndex');
-      
+
       // party.deroulement[0][nextIndex];
       setCurrentGameIndex(nextIndex);
       setRedirectionGame(`${party.deroulement[currentTourIndex][nextIndex]}`);
@@ -86,8 +86,15 @@ export default function ResultatTimeline({Sources, setGame}) {
     console.log(JSON.stringify(Sources) === JSON.stringify(tabsrc)); //true
     if(JSON.stringify(Sources) !== JSON.stringify(tabsrc)){
       setcorrec(false);
+      const updatedPoints = [...party.points];
+      updatedPoints[currentGameIndex % party.playerNumber] += 1;
+      setParty(prevParty => ({
+          ...prevParty,
+          points: updatedPoints,
+      }));
     }else{
       setcorrec(true);
+      
     }
   
   }, []); 

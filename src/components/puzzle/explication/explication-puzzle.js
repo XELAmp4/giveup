@@ -16,6 +16,7 @@ export default function ExplicationPuzzle({setGame}) {
       <Chrono 
         chrono={5}
         setGame={setGame}
+        button={'Passer !'}
         redirection={'question-puzzle'}
       />
     </div>

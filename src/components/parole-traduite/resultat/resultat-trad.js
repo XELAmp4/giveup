@@ -10,12 +10,22 @@ export default function TraductionResult({index, gagnant, setGame}) {
   const { currentGameIndex, setCurrentGameIndex } = useParty();
   const { currentTourIndex, setCurrentTourIndex } = useParty();
   const {redirectionGame, setRedirectionGame} = useParty(); 
+
   useEffect(() => {
    
     var nextTourIndex = currentTourIndex +1;
     console.log(party.lap,'lap');
     console.log(nextTourIndex,'nextourindex');
     
+
+
+    const updatedPoints = [...party.points];
+    updatedPoints[gagnant - 1] += 1; // Soustrayez 1 car les indices du tableau commencent à 0
+    setParty((prevParty) => ({
+      ...prevParty,
+      points: updatedPoints,
+    }));
+
     
     if (nextTourIndex < party.lap) {
 
