@@ -27,8 +27,8 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
   );
   function random(){
     var rand1 = Math.floor(Math.random()*21);    
-  
     return rand1;}
+
   useEffect(() => {
     const imgWidth = 300;
     const imgHeight = 300;
@@ -39,11 +39,10 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
       return Math.floor(Math.random() * x);
     }
   
-    pochette = random(21);
+    pochette = random(20);
     setPochette(pochette);
     const sourceCove = cover[pochette].img;
     
-  
     let order = [];
     for (let row = 0; row < 3; row++) {
       for (let col = 0; col < 3; col++) {
@@ -68,7 +67,6 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
       while (j === 0){
         j = Math.floor(Math.random() * (i + 1));}
 
-  
       [order[i], order[j]] = [order[j], order[i]];
       [newElements[i], newElements[j]] = [newElements[j], newElements[i]];
     }
@@ -80,7 +78,6 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
 
   const handleDragEnd = (event) => {
     const { active, over } = event;
-    
     
     if (active && over && active.id !== over.id) {
       let activeIndex = elements.findIndex((el) => el.id === active.id);
@@ -109,9 +106,6 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
       <div id={styles.plateau} class="">
         <ImageDivide elements={elements} />
       </div>
-      
-      
     </DndContext>
-    
   );
 }

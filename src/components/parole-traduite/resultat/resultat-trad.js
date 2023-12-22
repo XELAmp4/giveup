@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 
 export default function TraductionResult({index, gagnant, setGame}) {
 
-
   const { party, setParty } = useParty();
   const { currentGameIndex, setCurrentGameIndex } = useParty();
   const { currentTourIndex, setCurrentTourIndex } = useParty();
@@ -14,7 +13,7 @@ export default function TraductionResult({index, gagnant, setGame}) {
   useEffect(() => {
     var nextTourIndex = currentTourIndex +1;
     const updatedPoints = [...party.points];
-    updatedPoints[gagnant - 1] += 1; // Soustrayez 1 car les indices du tableau commencent à 0
+    updatedPoints[gagnant - 1] += 1; 
     setParty((prevParty) => ({
       ...prevParty,
       points: updatedPoints,

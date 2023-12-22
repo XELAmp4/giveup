@@ -4,7 +4,6 @@ import ResultatPuzzle from './resultat/resultat-puzzle'
 import React, { useState, useEffect } from 'react';
 import cover from '../../assets/data/cover.json'
 
-
 export default function Puzzle({}) {
   const [elements, setElements] = useState([]);
   const [orderCase, setOrderCase] = useState([]);

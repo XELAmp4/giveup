@@ -3,7 +3,6 @@ import cover from '../../../assets/data/cover.json'
 import React, { useState, useRef, useEffect } from 'react';
 import Chrono from '../../chrono/chrono';
 
-// eslint-disable-next-line no-empty-pattern
 export default function QuestionRelier({setGame, Sources, setSources, save, setSave, liste}) {
     const canvasPOINTSRef = useRef(null);
     const canvasLINESRef = useRef(null);
@@ -23,7 +22,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         const canvasPOINTS = canvasPOINTSRef.current;
         ctx2 = canvasPOINTS.getContext('2d');
 
-        
         CreatePoints(ctx2,datas.right,datas.firstPoint,'D1','white',datas.point);
         CreatePoints(ctx2,datas.right,datas.secondPoint,'D2','white',datas.point);
         CreatePoints(ctx2,datas.right,datas.thirdPoint,'D3','white',datas.point);
@@ -44,7 +42,7 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         canvasLINES.removeEventListener('pointerup', handlePointerUp);
         canvasLINES.removeEventListener('pointermove', handlePointerMove);
       };
-    }, []); // Empty dependency array to run this effect only once on mount
+    }, []); 
   
     //Dessiner les lignes présentes dans la variable lines
     function drawLines() {
@@ -65,7 +63,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         ctx.stroke();
     }
 
-
     //création des points
     function CreatePoints(ctx,x,y,id, fill = 'red', width = 10) {
         ctx.fillStyle = fill;
@@ -74,7 +71,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         ctx.fill()
         points.push({x,y,width,id})
     }
-
 
     // Verifie si un point est relation avec un autre ou non
     function inRelation(element) {
@@ -91,7 +87,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
         return depart[0] == arrive[0]
     }
 
-  
     // Calcul la taille des éléments des canvas
     function size() {
         let screenH = window.innerHeight;
@@ -106,7 +101,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
 
         let interval = miniGameSectionH * 24.25/100;
         let point = miniGameSectionH * 3/100;
-
 
         return {
             canvasSizeH : gameSectionH * 60/100,
@@ -159,7 +153,6 @@ export default function QuestionRelier({setGame, Sources, setSources, save, setS
     };
   
     const handlePointerMove = (e) => {
-    //   console.log('move ', ctx);
       if (drawing) {
         void ctx.clearRect(0, 0, 500, 500);
         drawLines();

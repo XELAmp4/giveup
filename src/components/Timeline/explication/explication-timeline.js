@@ -1,8 +1,6 @@
 import styles from './explication-timeline.module.sass'
 import Chrono from '../../chrono/chrono';
 
-
-
 export default function ExplicationTimeline({setGame}) {
   return( 
   <section className={styles.explication}>

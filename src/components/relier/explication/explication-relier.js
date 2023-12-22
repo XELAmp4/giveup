@@ -1,8 +1,6 @@
 import styles from './explication-relier.module.sass'
 import Chrono from '../../chrono/chrono';
 
-
-
 export default function ExplicationRelier({setGame}) {
   return( 
     <section className={styles.explication}>

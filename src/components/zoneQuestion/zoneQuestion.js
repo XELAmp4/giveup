@@ -8,7 +8,6 @@ import { useParty } from '../../providers/party-provider'
 import RedirectionPuzzle from '../puzzle/redirectionPuzzle'
 import Scoreboard from '../scoreboard/scoreboard'
 
-
 export default function ZoneQuestion({}) {
   const { party, setParty } = useParty();
   let content;

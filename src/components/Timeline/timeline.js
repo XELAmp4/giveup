@@ -4,7 +4,6 @@ import ResultatTimeline from './resultat/resultat-timeline'
 import { useState } from 'react';
 import cover from '../../assets/data/cover.json'
 
-
 export default function Timeline({}) {
     //fonction permettant de choisir trois images totalement aléatoirement
     function random(x){

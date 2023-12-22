@@ -3,12 +3,10 @@ import cover from '../../../assets/data/cover.json'
 import { useState, useEffect } from 'react';
 import Chrono from '../../chrono/chrono';
 
-// eslint-disable-next-line no-empty-pattern
 export default function Question({setGame, Sources, setSources}) {
 
     //Ce tableau vide contiendra l'indices des deux cliques pour échanger les images
     const [tab, setTab] = useState([]);
-
 
     //Rentre les données des clique 
     const MajTab = (indice)=>{

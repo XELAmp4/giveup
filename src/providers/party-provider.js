@@ -1,13 +1,10 @@
 import { createContext, useContext, useState } from "react";
 
-
 const PartyContext = createContext()
-
 
 export const useParty = () => {
     return useContext(PartyContext);
 }
-
 
 export const PartyProvider = ({
     children

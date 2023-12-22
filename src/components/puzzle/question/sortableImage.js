@@ -11,7 +11,6 @@ export default function SortableImage({ data, elements, setElements, imgWidth, i
     transition: undefined,
   };
 
-  
   return (
     <div
       id={data.id}

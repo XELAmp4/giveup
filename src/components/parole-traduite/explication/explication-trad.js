@@ -1,8 +1,6 @@
 import styles from './explication-trad.module.sass'
 import Chrono from '../../chrono/chrono';
 
-
-
 export default function ExplicationTrad({setGame}) {
   return( 
   <section className={styles.explication}>

@@ -4,8 +4,6 @@ import styles from './resultat-puzzle.module.sass';
 import { useParty } from '../../../providers/party-provider'; 
 import Chrono from '../../chrono/chrono';
 
-
-
 export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setElements, sourceCover, pochette, setGame }) {
   const [bravo, setBravo] = useState(false);
   const { currentGameIndex, setCurrentGameIndex } = useParty();
@@ -97,8 +95,6 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
             redirectionGame={redirectionGame}
           />
         </div>
-        
-        
       )}
     </div>
   );

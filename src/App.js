@@ -14,12 +14,9 @@ import { useParty } from './providers/party-provider';
 // █▄▄▄▄▄▄▄█▄▄▄█ █▄▄▄█ █▄▄▄▄▄▄▄█▄▄▄█    
 // BELLET Alexandre - COLLET Clément - BRAVARD Lorenzo
 
-
-
 function App() {
 
   const { party, setParty } = useParty();
-
 
   const changePage = ()=>{
     if (party.pageActive === 'home') {
@@ -69,7 +66,6 @@ function App() {
       )
       break
 
-
     case 'puzzle':
       content= (
         <Indication
@@ -81,8 +77,6 @@ function App() {
     default:
       break;
   }
-
-  
 
   return (
     <div className="App" onClick={changePage}>

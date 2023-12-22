@@ -10,12 +10,9 @@ export default function Chrono({chrono, setGame, redirection, button, redirectio
 
   useEffect(() => { 
 
-      //Implementing the setInterval method 
       const interval = setInterval(() => { 
           setCount(count - 1); 
           if(count === 0)
-            
-            
           if (redirectionGameBoolean === true) {
             setParty((prevParty) => ({
               ...prevParty,
@@ -30,8 +27,6 @@ export default function Chrono({chrono, setGame, redirection, button, redirectio
 
       //Clearing the interval 
       return () => clearInterval(interval);
-      
-      
   }, [count]); 
   if (redirectionGameBoolean === true) {
     return( 

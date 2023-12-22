@@ -1,8 +1,6 @@
 import styles from './explication-puzzle.module.sass'
 import Chrono from '../../chrono/chrono';
 
-
-
 export default function ExplicationPuzzle({setGame}) {
   return( 
   <section className={styles.explication}>
@@ -20,7 +18,6 @@ export default function ExplicationPuzzle({setGame}) {
         redirection={'question-puzzle'}
       />
     </div>
-    
   </section>
   )
 }

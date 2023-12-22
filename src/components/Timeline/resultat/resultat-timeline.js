@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useParty } from '../../../providers/party-provider';
 import Chrono from '../../chrono/chrono';
 
-
 export default function ResultatTimeline({Sources, setGame}) {
   const [date, setDate] = useState([Sources[0].Sortie, Sources[1].Sortie, Sources[2].Sortie]);
   const [img, setImg] = useState([Sources[0], Sources[1], Sources[2]]);
@@ -13,8 +12,6 @@ export default function ResultatTimeline({Sources, setGame}) {
   const { currentTourIndex, setCurrentTourIndex } = useParty();
   const {redirectionGame, setRedirectionGame} = useParty();
   
-
-
   useEffect(() => {
       const timestamp1 = Sources[0].date;
       const timestamp2 = Sources[1].date;
@@ -69,13 +66,9 @@ export default function ResultatTimeline({Sources, setGame}) {
       setParty(prevParty => ({
           ...prevParty,
           points: updatedPoints,
-      }));
-      console.log(party.points,'party.points');
-      
+      }));     
     }
-  
   }, []); 
-
 
   return( 
   <section className={styles.resultat}>

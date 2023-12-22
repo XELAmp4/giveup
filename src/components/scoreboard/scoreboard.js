@@ -14,10 +14,7 @@ export default function Scoreboard() {
 
     // Vérifier s'il y a égalité
   const egalite = Points.filter((point) => point === Points[gagnantIndex]).length > 1;
-
-  console.log(egalite);
-
-  
+ 
     return (
       <section className={styles.resultat}>
         <Chrono 

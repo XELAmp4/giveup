@@ -13,13 +13,9 @@ export default function ResultatRelier({Sources, save, artistes, setGame}) {
 
   useEffect(() => {
     const nextIndex = currentGameIndex + 1;
-    console.log(currentGameIndex,'currentGameIndex');
-    console.log(nextIndex,'nextIndex');
     
-    // party.deroulement[0][nextIndex];
     setCurrentGameIndex(nextIndex);
     setRedirectionGame(`${party.deroulement[currentTourIndex][nextIndex]}`);
-    console.log(party.deroulement[currentTourIndex][nextIndex],'redirectionGame');
 
   let nbOk = 0;
   if (save.length === 3) {
@@ -49,7 +45,6 @@ export default function ResultatRelier({Sources, save, artistes, setGame}) {
           ...prevParty,
           points: updatedPoints,
       }));
-      console.log(party.points,'party.points');
   }
 
 }, []); 
