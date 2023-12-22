@@ -22,14 +22,19 @@ export default function Parametres() {
         const games = ['timeline', 'puzzle', 'relier'];
 
         let array = [];
-        
         for (let index = 0; index < boutonActifTours; index++) {
-            let randomOrder = [...games]; // Créez une copie du tableau games pour l'ordre aléatoire
-            randomOrder.sort(() => Math.random() - 0.5); // Mélangez l'ordre de manière aléatoire
+            array.push([]);
+            for (let index2 = 0; index2 < boutonActifUpers; index2++) {
+                let randomGame;
+                do {
+                    randomGame = games[Math.floor(Math.random() * games.length)];
+                } while (index2 > 0 && randomGame === array[index][index2 - 1]); // Vérifie si le jeu précédent est le même
         
-            array.push(randomOrder.concat(['traduction']));
+                array[index].push(randomGame);
+            }
+            array[index].push('traduction');
         }
-        
+
         const initialPoints = Array(boutonActifUpers).fill(0); // Crée un tableau de zéros avec la taille boutonActifUpers
 
         setParty((prev) => {
@@ -42,7 +47,7 @@ export default function Parametres() {
             setCurrentGameIndex(0);
             return { ...newDatas };
         });
-    };//coucou
+    };
 
     return (
         <div className={`${styles.parametres}`}>
