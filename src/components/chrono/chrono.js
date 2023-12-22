@@ -36,11 +36,21 @@ export default function Chrono({chrono, setGame, redirection, button, redirectio
       
       
   }, [count]); 
-
-  return( 
-    <section className={styles.Chrono}>
-        <p className={styles.passe} onClick={() => setGame(redirection)}>{button}</p>
-      <p className={styles.compteur}>{count}</p>
-    </section>
-  )
+  if (redirectionGameBoolean === true) {
+    return( 
+      <section className={styles.Chrono}>
+          <p className={styles.passe} onClick={() => setGame(redirection)}>{button}</p>
+        <p className={styles.compteur}>{count}</p>
+      </section>
+    )
+    
+  }else {
+    return( 
+      <section className={styles.Chrono}>
+          <p className={styles.passe} onClick={() => setGame(redirection)}>{button}</p>
+        <p className={styles.compteur}>{count}</p>
+      </section>
+    )
+  }
+ 
 }
