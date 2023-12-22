@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 export default function Question({ propo, index, setGame, buzzer, setBuzzer, nbJoueur}) {
      const text = propo[0];
      const [correc, setcorrec] = useState('');
-
      useEffect(() => {
      const handleKeyPress = (event) => {
           if(nbJoueur === 2){

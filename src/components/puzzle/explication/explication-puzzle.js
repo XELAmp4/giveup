@@ -12,7 +12,7 @@ export default function ExplicationPuzzle({setGame}) {
     </div>
     <div className={styles.divChrono}>
       <Chrono 
-        chrono={5}
+        chrono={15}
         setGame={setGame}
         button={'Passer !'}
         redirection={'question-puzzle'}

@@ -31,7 +31,7 @@ export default function Scoreboard() {
             <p key={index} className={styles.joueurs}>
               Joueur {index + 1} : {joueur} points </p>
           ))}
-          {egalite === true ? <p className={styles.joueurs}>Égalité!</p> : <p className={styles.joueurs}>Bravo Joueur {gagnantIndex + 1} tu as gagné !!</p>}
+          {egalite === true ? <p className={styles.etat}>Égalité!</p> : <p className={styles.etat}>Bravo Joueur {gagnantIndex + 1} tu as gagné !!</p>}
         </div>
         
       </section>

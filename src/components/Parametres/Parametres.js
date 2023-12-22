@@ -39,6 +39,7 @@ export default function Parametres() {
 
         setParty((prev) => {
             const newDatas = { ...prev };
+            newDatas.playerNumber = boutonActifUpers;
             newDatas.deroulement = array;
             newDatas.lap = boutonActifTours;
             newDatas.pageActive = array[0][0];
