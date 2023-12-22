@@ -53,14 +53,12 @@ export default function Relier({}) {
 }
 
 const liste = useMemo(() => createList(Sources), [Sources]);
-console.log(liste,'liste');
 
 const artistes = {
   G1: liste[0] ? liste[0].Artiste : "a",
   G2: liste[1] ? liste[1].Artiste : "b",
   G3: liste[2] ? liste[2].Artiste : "c",
 };
-console.log(artistes,'artistes');
 
   switch (gameT) {
     case 'explication-relier':
