@@ -18,7 +18,7 @@ export default function Parametres() {
     };
 
     const submit = () => {
-        const games = ['puzzle', 'timeline'];
+        const games = ['puzzle', 'timeline', 'relier'];
 
         let array = [];
         for (let index = 0; index < boutonActifTours; index++) {

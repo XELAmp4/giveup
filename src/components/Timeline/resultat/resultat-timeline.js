@@ -12,7 +12,6 @@ export default function ResultatTimeline({Sources, setGame}) {
   const { currentGameIndex, setCurrentGameIndex } = useParty();
   const { currentTourIndex, setCurrentTourIndex } = useParty();
   const {redirectionGame, setRedirectionGame} = useParty();
-  console.log(party,'party');
   
 
 
@@ -97,11 +96,11 @@ export default function ResultatTimeline({Sources, setGame}) {
   return( 
   <section className={styles.resultat}>
     <h1>La réponse est ...</h1>
-    <img className={styles.cover1} src={'Timeline/'+img[0].img} alt=''></img>
+    <img className={styles.cover1} src={'cover/'+img[0].img} alt=''></img>
     <p className={styles.date1}>{date[0]}</p>
-    <img className={styles.cover2} src={'Timeline/'+img[1].img} alt=''></img>
+    <img className={styles.cover2} src={'cover/'+img[1].img} alt=''></img>
     <p className={styles.date2}>{date[1]}</p>
-    <img className={styles.cover3} src={'Timeline/'+img[2].img} alt=''></img>
+    <img className={styles.cover3} src={'cover/'+img[2].img} alt=''></img>
     <p className={styles.date3}>{date[2]}</p>
     <div>
     <svg width="12vw" height="12vw" viewBox="0 0 1843 1843" fill="none" xmlns="http://www.w3.org/2000/svg" className={`${styles.cross} ${ correc === false ? styles.block : styles.none}`}>
