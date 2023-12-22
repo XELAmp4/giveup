@@ -20,7 +20,7 @@ export default function Parametres() {
     const submit = () => {
 
 
-        const games = ['timeline','puzzle','relier'];
+        const games = ['timeline','puzzle'];
 
 
 
@@ -33,21 +33,7 @@ export default function Parametres() {
             }
 
             // let array = [['a','b','c'],['a','b','c'],['a','b','c']]
-            setParty((prev) => {
-                const newDatas = {...prev};
-                newDatas.deroulement = array;
-
-                console.log(newDatas.deroulement,'deroulement');
-                
-                // newDatas.pageActive = array[0][0]; ligne finale qund tous les jeux seront prets :)
-                newDatas.pageActive = 'puzzle';                
-                array[index].push('traduction');
-                return {...newDatas}
-
-            
-        })
-
-
+        }  
         const initialPoints = Array(boutonActifUpers).fill(0); // Crée un tableau de zéros avec la taille boutonActifUpers
 
         setParty((prev) => {
@@ -116,4 +102,4 @@ export default function Parametres() {
             </button>
         </div>
     );
-}}
+}
