@@ -8,7 +8,7 @@ export default function ResultatTimeline({Sources, save, artistes}) {
 
   console.log("%cRésultats", "color: red")
   // console.log(save);
-  // console.log(Sources);
+  console.log(Sources);
   let correct;
   let correc_front;
   let nbOk = 0;
