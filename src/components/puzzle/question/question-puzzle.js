@@ -114,14 +114,12 @@ export default function Puzzle({setGame, orderCase, setOrderCase, elements, setE
       collisionDetection={closestCenter}
       onDragEnd={handleDragEnd}
     >
-    <div className={styles.divChrono}>
-        <Chrono 
-            redirection = {'resultat-puzzle'}
-            setGame={setGame}
-            button={'Valider'}
-            chrono={12}
-        />
-    </div>
+    <Chrono 
+        redirection = {'resultat-puzzle'}
+        setGame={setGame}
+        button={'Valider'}
+        chrono={12}
+    />
       <div id={styles.plateau} class="">
         <ImageDivide elements={elements} />
       </div>

@@ -40,15 +40,15 @@ export default function Question({setGame, Sources, setSources}) {
         </div>
         <div className={styles.texte}>
             <p>Ancien</p>
-            <Chrono 
-                redirection = {'resultat-timeline'}
-                setGame={setGame}
-                chrono={15}
-                button={'Valider'}
-                redirectionGameBoolean={false}
-            />
             <p>Récent</p>
         </div>
+        <Chrono 
+            redirection = {'resultat-timeline'}
+            setGame={setGame}
+            chrono={15}
+            button={'Valider'}
+            redirectionGameBoolean={false}
+        />
     </section>
     )
 }

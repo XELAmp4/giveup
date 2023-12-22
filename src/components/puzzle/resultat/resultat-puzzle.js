@@ -98,8 +98,8 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
           <Chrono 
             redirection = {party.pageActive}
             setGame={setGame}
-            chrono={1}
-            button={'Valider'}
+            chrono={200}
+            button={'Jeu suivant'}
             redirectionGameBoolean={true}
             redirectionGame={redirectionGame}
           />

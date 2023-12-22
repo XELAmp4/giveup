@@ -61,8 +61,8 @@ export default function TraductionResult({index, gagnant, setGame}) {
     <Chrono 
       redirection = {party.pageActive}
       setGame={setGame}
-      chrono={1}
-      button={'Valider'}
+      chrono={200}
+      button={'Jeu suivant'}
       redirectionGameBoolean={true}
       redirectionGame={redirectionGame}
     />
