@@ -28,6 +28,7 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
   const coverTitle = cover[pochette].Titre;
   const coverArtist = cover[pochette].Artiste;
   const coverDate = cover[pochette].Sortie
+  
   useEffect(() => {
     const elementsWithoutStyle = elements.map(({ style, ...rest }) => rest);
     const tableauWithoutStyle = tableauWin.map(({ style, ...rest }) => rest);

@@ -20,25 +20,25 @@ export default function Parametres() {
     const submit = () => {
 
 
-        const games = ['timeline','puzzle'];
-
-
-
+        const games = ['timeline', 'puzzle', 'relier'];
 
         let array = [];
+        
         for (let index = 0; index < boutonActifTours; index++) {
-            array.push([]);
-            for (let index2 = 0; index2 < boutonActifUpers; index2++) {
-                array[index].push(games[Math.floor(Math.random() * games.length)]);
-            }
+            let randomOrder = [...games]; // Créez une copie du tableau games pour l'ordre aléatoire
+            randomOrder.sort(() => Math.random() - 0.5); // Mélangez l'ordre de manière aléatoire
+        
+            array.push(randomOrder.concat(['traduction']));
+        }
+        
 
-            // let array = [['a','b','c'],['a','b','c'],['a','b','c']]
-        }  
         const initialPoints = Array(boutonActifUpers).fill(0); // Crée un tableau de zéros avec la taille boutonActifUpers
 
         setParty((prev) => {
             const newDatas = { ...prev };
             newDatas.deroulement = array;
+            console.log(newDatas.deroulement,'newDatas.deroulement');
+            
             newDatas.pageActive = array[0][0];
             newDatas.points = initialPoints; // Initialise le tableau des points avec des zéros
             setCurrentGameIndex(0);
