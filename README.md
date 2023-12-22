@@ -1,26 +1,12 @@
 # giveup
 
-React
+GiveUp est un blindtest visuel. Il a été pensé et développé pour être utilisé sur une tablette, GiveUp n'est donc pas responsive ! Mais pas d'inquiétude, voici toutes les informations nécessaires pour profiter pleinement de ce merveilleux jeu ! 
 
-Le but du projet est de faire un blindtest visuel. Exepmple une image d'un chanteur s'affiche à l'écran, le but est de donné son nom et prénom. Il y aurai deux catégories pour le scoreboard, une solo et une en équipe. Selon l'avancement du projet des catégories de style de musique pourrai être créé. 
+## Parametre pour bien lancer le projet :
 
-## idée blindTest :
-
-### Rébu
-
-### Image de l'artiste ou de la cover
-
-### Musique anglaise montrais les paroles traduite en francais.
-
-### puzzle
-
-### frise 
-
-### 4 artiste d'un coté, 4 cover de l'autre relie le bon artiste a la bonne cover
-
-## Taille écran:
+### Taille écran:
 3840x2160
 
+### Dépendance:
+`npm install @dnd-kit/core`
 
-# Police titre :
-ACME
