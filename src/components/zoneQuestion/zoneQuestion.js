@@ -12,7 +12,6 @@ import Scoreboard from '../scoreboard/scoreboard'
 export default function ZoneQuestion({}) {
   const { party, setParty } = useParty();
   let content;
-  console.log(party.pageActive,'zone');
   
   switch (party.pageActive) {
     case 'home':

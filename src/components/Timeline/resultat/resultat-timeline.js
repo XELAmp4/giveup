@@ -19,63 +19,40 @@ export default function ResultatTimeline({Sources, setGame}) {
       const timestamp1 = Sources[0].date;
       const timestamp2 = Sources[1].date;
       const timestamp3 = Sources[2].date;
-      console.log(timestamp1, timestamp2, timestamp3)
       var tabdate = [];
       var tabsrc = [];
       const nextIndex = currentGameIndex + 1;
-      console.log(currentGameIndex,'currentGameIndex');
-      console.log(nextIndex,'nextIndex');
-
-      // party.deroulement[0][nextIndex];
       setCurrentGameIndex(nextIndex);
       setRedirectionGame(`${party.deroulement[currentTourIndex][nextIndex]}`);
-      console.log(party.deroulement[currentTourIndex][nextIndex],'redirectionGame');
-      
-
-      
-  
       if (timestamp1 < timestamp2) {
-        console.log('Date 1 avant Date 2');
         if (timestamp2 < timestamp3) {
-          console.log('Date 2 avant Date 3');
           if (timestamp1 < timestamp3) {
-            console.log('Date 1 avant Date 3');
             tabdate =[Sources[0].Sortie ,Sources[1].Sortie ,Sources[2].Sortie]
             tabsrc =[Sources[0] ,Sources[1] ,Sources[2]]
           } 
         } else {
-          console.log('Date 2 apres 3');
           if (timestamp1 < timestamp3) {
-            console.log('Date 1 avant Date 3');
             tabdate =[Sources[0].Sortie ,Sources[2].Sortie ,Sources[1].Sortie]
             tabsrc =[Sources[0] ,Sources[2] ,Sources[1]]
           } else {
-            console.log('Date 1 apres 3');
             tabdate =[Sources[2].Sortie, Sources[0].Sortie, Sources[1].Sortie]
             tabsrc =[Sources[2], Sources[0], Sources[1]]
           }
         }
       } else {
-        console.log('Date 1 apres Date 2');
         if (timestamp2 < timestamp3) {
-          console.log('Date 2 avant Date 3');
           if (timestamp1 < timestamp3) {
-            console.log('Date 1 avant Date 3');
             tabdate =[Sources[1].Sortie, Sources[0].Sortie, Sources[2].Sortie]
             tabsrc =[Sources[1], Sources[0], Sources[2]]
           } else {
-            console.log('Date 1 apres 3');
             tabdate =[Sources[1].Sortie, Sources[2].Sortie, Sources[0].Sortie]
             tabsrc =[Sources[1], Sources[2], Sources[0]]
           }
         } else {
-          console.log('Date 2 apres Date 3');
           if (timestamp1 < timestamp3) {
-            console.log('Date 1 avant Date 3');
             tabdate =[Sources[2].Sortie, Sources[1].Sortie, Sources[0].Sortie]
             tabsrc =[Sources[2], Sources[1], Sources[0]]
           } else {
-            console.log('Date 1 apres 3');
             tabdate =[Sources[2].Sortie, Sources[1].Sortie, Sources[0].Sortie]
             tabsrc =[Sources[2], Sources[1], Sources[0]]
           }
@@ -83,7 +60,6 @@ export default function ResultatTimeline({Sources, setGame}) {
     }
     setDate(tabdate);
     setImg(tabsrc);
-    console.log(JSON.stringify(Sources) === JSON.stringify(tabsrc)); //true
     if(JSON.stringify(Sources) !== JSON.stringify(tabsrc)){
       setcorrec(false);
     }else{
@@ -123,8 +99,8 @@ export default function ResultatTimeline({Sources, setGame}) {
     <Chrono 
       redirection = {party.pageActive}
       setGame={setGame}
-      chrono={1}
-      button={'Valider'}
+      chrono={200}
+      button={'Jeu suivant'}
       redirectionGameBoolean={true}
       redirectionGame={redirectionGame}
     />

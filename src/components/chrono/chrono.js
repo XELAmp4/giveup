@@ -21,9 +21,6 @@ export default function Chrono({chrono, setGame, redirection, button, redirectio
               ...prevParty,
               pageActive: redirectionGame,
             })) 
-            console.log(party,'derouChrono');
-            console.log(party.pageActive,'ActiveChrono');
-            
               setGame('explication-'+redirection)
             }else {
               setGame(redirection)

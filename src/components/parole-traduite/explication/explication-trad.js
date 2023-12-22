@@ -14,7 +14,7 @@ export default function ExplicationTrad({setGame}) {
       <p className={styles.touchep}> Touche U : Joueur 3</p>
       <p className={styles.touchep}> Touche P : Joueur 4</p>
     </div>
-    <img className={styles.imgjeu} src='Timeline/exemple-traduction.png' alt='Screen du jeu Timeline'></img>
+    <img className={styles.imgjeu} src='imageExplication/exemple-traduction.png' alt='Screen du jeu Timeline'></img>
     <Chrono 
       chrono={30}
       setGame={setGame}

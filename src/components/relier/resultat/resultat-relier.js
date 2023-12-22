@@ -83,8 +83,8 @@ export default function ResultatRelier({Sources, save, artistes, setGame}) {
     <Chrono 
       redirection = {party.pageActive}
       setGame={setGame}
-      chrono={20}
-      button={'Valider'}
+      chrono={200}
+      button={'Jeu suivant'}
       redirectionGameBoolean={true}
       redirectionGame={redirectionGame}
     />

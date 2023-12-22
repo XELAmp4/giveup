@@ -4,7 +4,6 @@ import SortableImage from './sortableImage';
 import styles from './puzzle.module.sass';
 
 export default function ImageDivide({ elements, orderCase }) {
-  console.log(elements,'elementDivide');
   
   return (
     <SortableContext reorderItems={arraySwap} strategy={rectSwappingStrategy}  items={elements.map((el) => el.id)}>

@@ -37,14 +37,8 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
       JSON.stringify(element) === JSON.stringify(tableauWithoutStyle[index])
     );
     const nextIndex = currentGameIndex + 1;
-    console.log('nextIndex');
-    
-    console.log(currentGameIndex,'currentGameIndex');
-    
-    console.log(nextIndex,'nextIndex');
     setCurrentGameIndex(nextIndex);
     setRedirectionGame(party.deroulement[currentTourIndex][nextIndex]);
-    console.log(party.deroulement[currentTourIndex][nextIndex],'party.deroulement[0][nextIndex]');
     if(sontEgaux){
       const updatedPoints = [...party.points];
       updatedPoints[currentGameIndex % party.playerNumber] += 1;
@@ -52,10 +46,8 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
           ...prevParty,
           points: updatedPoints,
       }));
-      console.log(party.points,'party.points');
-    }
-    console.log(party,'points');
-    
+    }    
+
     setBravo(sontEgaux);
   }, []);
 
@@ -99,8 +91,8 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
           <Chrono 
             redirection = {party.pageActive}
             setGame={setGame}
-            chrono={1}
-            button={'Valider'}
+            chrono={200}
+            button={'Jeu suivant'}
             redirectionGameBoolean={true}
             redirectionGame={redirectionGame}
           />
