@@ -26,7 +26,6 @@ export default function Scoreboard() {
               Joueur {index + 1} : {joueur} points </p>
           ))}
           {egalite === true ? <p className={styles.joueurs}>Égalité!</p> : <p className={styles.joueurs}>Bravo Joueur {gagnantIndex + 1} tu as gagné !!</p>}
-}
         </div>
       </section>
     );
