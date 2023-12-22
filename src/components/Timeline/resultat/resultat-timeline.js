@@ -62,14 +62,15 @@ export default function ResultatTimeline({Sources, setGame}) {
     setImg(tabsrc);
     if(JSON.stringify(Sources) !== JSON.stringify(tabsrc)){
       setcorrec(false);
+    }else{
+      setcorrec(true);
       const updatedPoints = [...party.points];
       updatedPoints[currentGameIndex % party.playerNumber] += 1;
       setParty(prevParty => ({
           ...prevParty,
           points: updatedPoints,
       }));
-    }else{
-      setcorrec(true);
+      console.log(party.points,'party.points');
       
     }
   

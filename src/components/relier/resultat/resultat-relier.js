@@ -49,6 +49,7 @@ export default function ResultatRelier({Sources, save, artistes, setGame}) {
           ...prevParty,
           points: updatedPoints,
       }));
+      console.log(party.points,'party.points');
   }
 
 }, []); 

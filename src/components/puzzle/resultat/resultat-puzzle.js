@@ -47,6 +47,7 @@ export default function ResultatPuzzle({ orderCase, setOrderCase, elements, setE
           points: updatedPoints,
       }));
     }    
+
     setBravo(sontEgaux);
   }, []);
 
